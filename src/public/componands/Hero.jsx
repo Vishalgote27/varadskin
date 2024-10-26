@@ -29,7 +29,7 @@ const Hero = () => {
    sm:mt-10
    lg:mt-10
    xl:mt-0
-     h-52      /* Mobile height */
+     h-52     /* Mobile height */
     sm:h-96   /* Small screens */
     md:h-[28rem]   /* Medium screens */
     lg:h-[30rem]  /* Large screens */

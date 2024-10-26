@@ -30,7 +30,7 @@ const AboutUs = () => {
                                 <img
                                     src="https://img.freepik.com/premium-photo/woman-beauty-face-healthy-skin-natural-makeup-beautiful-young-model-studio-shot_431835-5247.jpg?w=826"
                                     alt="About Us"
-                                    className="w-full h-96 object-cover rounded-lg shadow-lg"
+                                    className="w-full h-72 sm:h-96 object-cover rounded-lg shadow-lg"
                                 />
                                 {/* Top-left and bottom-right border styling with 50% width */}
                                 <div className="absolute top-0 left-0  border-t-4 border-l-4 border-[#C59847] w-1/4 h-1/3 rounded-tl-lg"></div>
