@@ -1,0 +1,8 @@
+.hero {
+    background-image: url('/photos/Maroon Clean Beauty Clinic Presentation_page-0001.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
