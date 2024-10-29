@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import emailjs from 'emailjs-com';
 import coverImageContact from '/photos/contactcover_page-0001.jpg'
 
 const Contact = () => {
