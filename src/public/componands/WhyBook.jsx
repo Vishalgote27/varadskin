@@ -18,20 +18,13 @@ const WhyBook = () => {
                         <p className="text-[#C59847] font-semibold text-md mb-2 leading-relaxed">
                             BOARD-CERTIFIED SKINCARE PHYSICIAN
                         </p>
-                        <h1 className="text-2xl sm:text-4xl font-bold  mb-2 leading-tight">
-                            Dr.Varad Skin
+                        <h1 className="text-2xl sm:text-4xl font-bold mb-2 leading-tight">
+                            Dr. Priyanka Patil
                         </h1>
                         <p className="text-gray-600 mb-4 text-lg">
-                            Dr. Jane Smith is a highly skilled skincare specialist with a passion for helping her patients achieve
-                            their best skin. With extensive training in both medical and cosmetic dermatology, she offers a
-                            comprehensive range of services, including personalized skincare regimens, advanced treatments for
-                            various skin conditions, and the latest minimally invasive cosmetic procedures. Her commitment to
-                            staying at the forefront of dermatological advancements ensures that patients receive the most
-                            effective and innovative care tailored to their individual needs.
+                            Dr. Priyanka Patil is a highly regarded skincare and aesthetic medical specialist with over 5 years of clinical experience. She has completed her Post Graduate Diploma in Clinical Cosmetology (PGDCC) at the esteemed Illamed Institute in Mumbai. Dr. Patil is dedicated to providing personalized care, utilizing advanced treatments and chemical cosmetics to help her patients achieve their skincare goals. Her expertise in the latest dermatological techniques ensures that every patient receives tailored solutions that promote healthy, radiant skin.
                         </p>
                         <div className="">
-
-
                             <Link to={"/contact"}>
                                 <button className="bg-[#C59847] text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300">
                                     Book a Consultation
@@ -40,20 +33,19 @@ const WhyBook = () => {
                         </div>
                     </div>
                     {/* Photo Section */}
-                    <div className="w-full md:w-1/2 mb-8 md:mb-0 ">
+                    <div className="w-full md:w-1/2 mb-8 md:mb-0">
                         <div className="relative rounded-md overflow-hidden shadow-lg">
                             <img
                                 src={ImageAbout} // Add your image URL
-                                alt="Why Book With Me"
-                                className="w-full h-auto  object-cover"
+                                alt="Dr. Priyanka Patil"
+                                className="w-full h-auto object-cover"
                             />
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
+
 
 
         <div className="bg-[#FAF6F0] py-14 flex items-center overflow-hidden"> {/* Added overflow-hidden */}
@@ -78,12 +70,12 @@ const WhyBook = () => {
                         <h1 className="text-2xl sm:text-4xl font-bold  mb-2 leading-tight">
                             Exceptional Care <br /> Tailored to You
                         </h1>
-                        <p className="text-gray-600 mb-4">
+                        <p className="text-gray-600 mb-4 text-lg">
                             Book your appointment today and let me help you achieve the beautiful skin you deserve!
                         </p>
                         <div className="space-y-3">
                             {/* Key Benefit 1 */}
-                            <div className="flex items-start">
+                            <div className="flex items-center">
                                 <FaLeaf className="text-[#C59847] text-xl mr-4" /> {/* Icon */}
                                 <div>
                                     <h4 className="text-lg font-semibold text-[#C59847]">Expert Knowledge</h4>

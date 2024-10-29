@@ -1,9 +1,45 @@
-import React from 'react'
-import { FaUser, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'; // Import icons
-import { MdMessage } from 'react-icons/md'; //
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import coverImageContact from '/photos/contactcover_page-0001.jpg'
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // Basic form validation
+        if (!formData.name || !formData.email) {
+            toast.error("Please fill out all fields");
+            return;
+        }
+
+        // EmailJS send function
+        emailjs.send('service_velpecb', 'template_ei2wi4j', formData, 'MkoWbGkDbdaxSnBSi')
+            .then(() => {
+                toast.success("Message sent successfully!");
+                setFormData({ name: '', email: '', message: '' });
+            })
+            .catch(() => {
+                toast.error("Failed to send message. Please try again.");
+            });
+    };
     return <>
 
         <div className="w-full h-36 sm:h-60 md:h-60  lg:h-64 mt-14">
@@ -16,8 +52,8 @@ const Contact = () => {
 
 
         <div className="min-h-screen flex items-center justify-center py-14 px-6 sm:px-24 ">
-            {/* Main container with two columns */}
-            <div className="flex flex-col lg:flex-row  w-full rounded-lg shadow-xl overflow-hidden bg-white">
+            <ToastContainer />
+            <div className="flex flex-col lg:flex-row w-full rounded-lg shadow-xl overflow-hidden bg-white">
 
                 {/* Form Section */}
                 <div className="w-full lg:w-1/2 p-8">
@@ -25,50 +61,50 @@ const Contact = () => {
                     <p className="mt-2 text-center text-lg text-gray-600">
                         Have any questions? Feel free to reach out.
                     </p>
-                    <form className="mt-8 space-y-6">
-                        {/* Full Name */}
+                    <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+
                         <div>
-                            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                                Full Name
-                            </label>
+                            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Full Name</label>
                             <input
                                 type="text"
                                 name="name"
                                 id="name"
+                                value={formData.name}
+                                onChange={handleChange}
                                 className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#C59847] focus:border-[#C59847] sm:text-sm transition duration-300"
                                 placeholder="Your Full Name"
+                                required
                             />
                         </div>
 
-                        {/* Email Address */}
                         <div>
-                            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                                Email Address
-                            </label>
+                            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address</label>
                             <input
                                 type="email"
                                 name="email"
                                 id="email"
+                                value={formData.email}
+                                onChange={handleChange}
                                 className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#C59847] focus:border-[#C59847] sm:text-sm transition duration-300"
                                 placeholder="you@example.com"
+                                required
                             />
                         </div>
 
-                        {/* Message */}
                         <div>
-                            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                                Message
-                            </label>
+                            <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
                             <textarea
                                 name="message"
                                 id="message"
                                 rows="4"
+                                value={formData.message}
+                                onChange={handleChange}
                                 className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-[#C59847] focus:border-[#C59847] sm:text-sm transition duration-300"
                                 placeholder="Type your message here..."
+
                             ></textarea>
                         </div>
 
-                        {/* Submit Button */}
                         <div className="text-center">
                             <button
                                 type="submit"
@@ -86,17 +122,16 @@ const Contact = () => {
                         <h3 className="text-2xl font-bold">Our Contact Information</h3>
                         <p className="text-lg">
                             <FaPhone className="inline-block text-yellow-400 mr-2" />
-                            +1 (234) 567-8901
+                            <a href="tel:+918767455374" className="cursor-pointer">+91 8767455374</a>
                         </p>
                         <p className="text-lg">
                             <FaEnvelope className="inline-block text-yellow-400 mr-2" />
-                            support@skincare.com
+                            <a href="mailto:varadskin2020@gmail.com" className="cursor-pointer">varadskin2020@gmail.com</a>
                         </p>
                         <p className="text-lg">
                             <FaMapMarkerAlt className="inline-block text-yellow-400 mr-2" />
-                            123 Skincare Avenue, City, Country
+                            Girja Housing Society, Ramkrushan Complex, Pundlik Nagar, Garkheda, Chh. Sambhajinagar
                         </p>
-                        {/* Optional Background Decoration */}
                         <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: `url('/path-to-your-image.jpg')` }}></div>
                     </div>
                 </div>

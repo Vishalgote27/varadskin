@@ -14,11 +14,12 @@ const Navbar = () => {
             {/* bg-[#FAF6F0] */}
             <nav className="bg-[#FAF6F0] text-black shadow-xs fixed top-0 left-0 w-full z-50 ">
                 <div className="max-w-7xl mx-auto px-5">
-                    <div className="flex justify-between items-center h-14">
+                    <div className="flex justify-between items-center h-20">
                         <div className="flex items-center">
-                            {/* <img className="h-16" src="/logo.png" alt="sitelogo" /> */}
-                            <span className="ml-4 uppercase font-bold text-xl tracking-wide text-[#C59847]">
-                                <Link to="/" onClick={() => setActive('/')}>Varad Skin Care</Link>
+                            <img className="h-20" src="/photos/Beige Red Gift Box Giveaway Instagram Post (1).png" alt="sitelogo" />
+                            <span className="ml-1 uppercase font-bold text-sx tracking-wide text-[#C59847]">
+                                <Link to="/" onClick={() => setActive('/')}>Dr.Priyank's
+                                    <br /><span className='text-xl'> Varad Skin Care</span> </Link>
                             </span>
                         </div>
                         <div className="hidden md:flex justify-center items-center lg:space-x-5 md:space-x-5">

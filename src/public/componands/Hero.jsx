@@ -38,7 +38,8 @@ const Hero = () => {
             mx-auto
     relative"
             style={{
-                backgroundImage: `url('/photos/Green and Blue Simple Blocks Beauty Landing Page Wireframe Website UI Prototype_page-0001.jpg')`,
+                // backgroundImage: `url('/photos/Green and Blue Simple Blocks Beauty Landing Page Wireframe Website UI Prototype_page-0001.jpg')`,
+                backgroundImage: `url('/photos/Green and Blue Simple Blocks Beauty Landing Page Wireframe Website UI Prototype_page-0001 (1).jpg')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',

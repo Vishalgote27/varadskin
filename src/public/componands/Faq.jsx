@@ -12,20 +12,17 @@ const Faq = () => {
                 "Facial treatments are recommended every 4-6 weeks for optimal results. However, this may vary based on your skin type and concerns.",
         },
         {
-            question: "Which skincare products are best for sensitive skin?",
+            question: "What skincare products are ideal for sensitive skin?",
             answer:
-                "For sensitive skin, it's essential to use gentle, hypoallergenic, and fragrance-free products to avoid irritation.",
-        },
+                "For sensitive skin, choose gentle, hypoallergenic, and fragrance-free products. Look for formulations that contain soothing ingredients like aloe vera or chamomile to minimize irritation.",
+        }, ,
+
         {
-            question: "How can I maintain glowing skin?",
+            question: "How can I maintain glowing skin while avoiding steroid creams?",
             answer:
-                "Maintaining glowing skin requires a consistent skincare routine, staying hydrated, and protecting your skin from the sun.",
-        },
-        {
-            question: "How can I maintain glowing skin?",
-            answer:
-                "Maintaining glowing skin requires a consistent skincare routine, staying hydrated, and protecting your skin from the sun.",
-        },
+                "To maintain glowing skin, focus on a consistent skincare routine that includes gentle cleansers, moisturizers, and sunscreen. Incorporate natural products rich in vitamins and antioxidants, and avoid harsh treatments like steroid creams that can damage skin in the long term. Staying hydrated and having a balanced diet also contribute to healthy, radiant skin."
+        }
+
     ];
 
     const toggleFAQ = (index) => {

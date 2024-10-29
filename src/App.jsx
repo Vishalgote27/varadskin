@@ -15,10 +15,11 @@ function App() {
   return (
     <BrowserRouter>
       {/* Wrap routes in Suspense to handle lazy loading */}
-      <Suspense fallback={<div>
-        <div className="flex flex-row space-x-4 justify-center items-center mt-56  ">
-          <div className="w-12 h-12 rounded-full animate-spin border-8 border-dashed border-green-500 border-t-transparent">
-          </div>
+      <Suspense fallback={<div class="flex justify-center items-center h-screen">
+        <div class="flex flex-row gap-2">
+          <div class="w-4 h-4 rounded-full bg-black animate-bounce"></div>
+          <div class="w-4 h-4 rounded-full bg-black animate-bounce [animation-delay:-.3s]"></div>
+          <div class="w-4 h-4 rounded-full bg-black animate-bounce [animation-delay:-.5s]"></div>
         </div>
       </div>}>
         <Routes>

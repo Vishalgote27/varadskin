@@ -1,30 +1,52 @@
 import React from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
-    {
-        id: 1,
-        name: "Jane Doe",
-        feedback: "I had an amazing experience! My skin has never felt better.",
-        image: "https://img.freepik.com/free-photo/beautiful-girl-with-beautiful-makeup-youth-skin-care-concept_155003-8119.jpg?t=st=1728988218~exp=1728991818~hmac=55a071bf97cbb07ef44e673fa50dd9a7d27df58fef1ca746b6f1885c24550b99&w=360", // Replace with client image
-    },
-    {
-        id: 2,
-        name: "John Smith",
-        feedback: "The services provided were top-notch. Highly recommend!",
-        image: "https://img.freepik.com/free-photo/business-concept-portrait-confident-young-businesswoman-keeping-arms-crossed-looking-camera-w_1258-104422.jpg?t=st=1728988332~exp=1728991932~hmac=94b51c21ac710fa4d5482d5d8b7f91d2df51b91e769b421833318ce85d9728c1&w=900", // Replace with client image
-    },
-    {
-        id: 2,
-        name: "John Smith",
-        feedback: "The services provided were top-notch. Highly recommend!",
-        image: "https://img.freepik.com/free-photo/business-concept-portrait-confident-young-businesswoman-keeping-arms-crossed-looking-camera-w_1258-104422.jpg?t=st=1728988332~exp=1728991932~hmac=94b51c21ac710fa4d5482d5d8b7f91d2df51b91e769b421833318ce85d9728c1&w=900", // Replace with client image
-    },
+    { id: 1, name: "Vivek patil", feedback: "Varad Skin Hair Laser Clinic is an excellent facility with easily accessible location. The doctors provide accurate diagnosis and great customer service. The clinic is clean, hygienic, and under good supervision." },
+
+    { id: 2, name: "Bhushan Patil", feedback: "TI had an excellent experience with Varad Skin Hair Laser Clinic. The clinic was easily accessible and well connected. The supervision was good, and the care provided was gentle. Overall, it was a great experience." },
+
+    { id: 3, name: "shaunak", feedback: "Varad Skin Hair Laser Clinic provides high standard care with great customer service. The doctors are well connected and ensure speedy recovery. The clinic is clean & hygienic, making it a top choice for treatment. " },
+
+    { id: 4, name: "Sajid Shaikh", feedback: "I recently visited Varad Skin Hair Laser Clinic and had an excellent experience. The professional counselling provided was extremely supportive. The clinic was clean and hygienic, which made me feel comfortable throughout my visit. I highly recommend this clinic for anyone seeking skin or hair treatments." },
+
+    { id: 5, name: "Shubham Kamble", feedback: "I recently visited Varad Skin Hair Laser Clinic and was quite impressed with their decent coverage of services. The quick service and reasonably priced treatments were a pleasant surprise. I didn't have to wait long, which was great. Overall, an excellent experience!" },
+
+    { id: 5, name: "ganesh patil", feedback: "Excellent clinic! Accurate diagnosis and reasonably priced treatments. The doctors are very professional and caring. Highly recommend Varad Skin Hair Laser Clinic for all your skin and hair needs." },
 ];
+
 const Testimonials = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1024, // Medium screens
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 640, // Small screens
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
 
-    return <>
 
-
+    return (
         <div className="mx-auto py-14 px-6 lg:px-24">
             {/* Title Section */}
             <div className="container mx-auto mb-10 text-center">
@@ -39,82 +61,19 @@ const Testimonials = () => {
                 </p>
             </div>
 
-            {/* Testimonials Section with Grid Layout */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8">
-                {/* Testimonial Card */}
-                <div className="text-center p-6  bg-[#FAF6F0] rounded-lg shadow-lg">
-                    <p className="text-gray-700 italic">
-                        "I've never been happier with my skin! [Brand Name] has changed my life for the better."
-                    </p>
-                    <h4 className="mt-4 font-bold text-gray-900">— Sarah M.</h4>
-                </div>
-
-                {/* Testimonial Card */}
-                <div className="text-center p-6 bg-[#FAF6F0] rounded-lg shadow-lg">
-                    <p className="text-gray-700 italic">
-                        "The natural ingredients and quality make a noticeable difference. Highly recommend!"
-                    </p>
-                    <h4 className="mt-4 font-bold text-gray-900">— Emma W.</h4>
-                </div>
-
-                {/* Testimonial Card */}
-                <div className="text-center p-6 bg-[#FAF6F0] rounded-lg shadow-lg">
-                    <p className="text-gray-700 italic">
-                        "Fantastic results, exceptional customer service, and a brand I trust!"
-                    </p>
-                    <h4 className="mt-4 font-bold text-gray-900">— Laura T.</h4>
-                </div>
-            </div>
+            {/* Testimonials Slider */}
+            <Slider {...settings} className="w-full max-w-5xl mx-auto">
+                {testimonials.map((testimonial) => (
+                    <div key={testimonial.id} className="p-4">
+                        <div className="bg-[#FAF6F0] rounded-lg shadow-md text-center p-6 mx-2 h-40 flex flex-col justify-between">
+                            <p className="text-gray-700 italic overflow-hidden text-ellipsis">{testimonial.feedback}</p>
+                            <h4 className="font-bold text-gray-900 mt-4">— {testimonial.name}</h4>
+                        </div>
+                    </div>
+                ))}
+            </Slider>
         </div>
-
-
-
-
-
-        <div className="h-auto md:h-80 bg-[#C59847] flex flex-col md:flex-row justify-between items-center md:py-10">
-            {/* Container for Images and Text */}
-            <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
-
-                {/* Image 1 */}
-                <div className="w-full md:w-1/3 overflow-hidden">
-                    <img
-                        src="/photos/freepik-export-20241015101126398h.png" // Replace with your image URL
-                        alt="Skin Care Service 1"
-                        className="w-full h-80 object-cover transform hover:scale-110 transition-transform duration-500"
-                    />
-                </div>
-
-                {/* Text in the Middle */}
-                <div className="text-center md:text-center md:w-1/3">
-                    <p className="text-white font-semibold text-md mb-2 leading-relaxed">
-                        READY TO TRANSFORM?
-                    </p>
-                    <h1 className="text-2xl font-bold text-white mb-2">Book Your Appointment Today</h1>
-                    <button className="bg-white text-[#C59847] font-semibold py-2 px-4 rounded-full mt-2 hover:bg-gray-200 transition-all duration-300">
-                        Book Now
-                    </button>
-                </div>
-
-                {/* Image 2 */}
-                <div className="w-full md:w-1/3 overflow-hidden  ">
-                    <img
-                        src="/photos/freepik-export-20241015095109GNSi.png" // Replace with your image URL
-                        alt="Skin Care Service 2"
-                        className="w-full h-80 object-cover transform hover:scale-110 transition-transform duration-500"
-                    />
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-    </>
-}
+    );
+};
 
 export default Testimonials;

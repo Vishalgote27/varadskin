@@ -31,26 +31,24 @@ const About = () => {
                             Our Story
                         </h1>
                         <p className="text-lg text-gray-700 mb-4">
-                            Founded in 2020, <strong>[Brand Name]</strong> began with a simple belief: that skincare should celebrate the beauty of natural ingredients. Our journey started with a passion for holistic wellness, and we've grown into a beloved brand recognized for our commitment to sustainability and quality.
+                            Founded in 2020, <strong>Dr. Priyanka Patil's Skincare Clinic</strong> was established with a mission to provide advanced skincare solutions. With over 5 years of clinical and practical experience, Dr. Patil specializes in aesthetic medicine and chemical cosmetics, ensuring the highest standards of care for her patients.
                         </p>
                         <p className="text-lg text-gray-700 mb-4">
-                            Every product we create is crafted with the finest botanical extracts and carefully selected natural ingredients. We aim to nourish your skin and empower you to embrace your unique beauty.
+                            Our clinic is dedicated to helping you achieve healthy, radiant skin through personalized treatment plans that harness the power of both medical expertise and aesthetic artistry. We believe that every individual deserves to feel confident and beautiful in their skin.
                         </p>
-                        {/* <p className="text-lg text-gray-700">
-                            As we continue to innovate, we blend traditional remedies with cutting-edge science, ensuring that our products deliver real results you can trust. Join us on this journey towards healthier, radiant skin.
-                        </p> */}
                     </div>
 
                     {/* Image */}
                     <div className="w-full lg:w-1/2 mb-8 lg:mb-0 order-2">
                         <img
-                            src="https://img.freepik.com/free-photo/attractive-woman-without-makeup-posing-white-wall-shot-brunette-towel-her-head_197531-13939.jpg?t=st=1729164498~exp=1729168098~hmac=a8476c300207a2f9434f22b348ac4b7cb24aab9dcc304a2e2b98e60189ba89d4&w=900"
+                            src="/photos/WhatsApp Image 2024-10-18 at 12.39.30_a85c726a.jpg"
                             alt="Our Story"
                             className="rounded-sm shadow-lg transition-transform duration-300 hover:scale-105"
                         />
                     </div>
                 </div>
             </section>
+
 
 
             {/* Our Mission Section */}

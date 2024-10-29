@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import backgroundImage from '/photos/lasercover_page-0001.jpg'
 import skinImage from '/photos/skincover_page-0001.jpg'
 import hairImage from '/photos/haircover_page-0001.jpg'
-import { FaRegSmileBeam, FaSpa, FaCompressArrowsAlt, FaCut, FaRegSadTear, FaRegHeart, FaPills, FaHandHoldingMedical, FaShieldAlt, FaPaintBrush, FaTint, FaRegClock, FaMedkit, FaLeaf, FaShower, FaRegHandPeace, FaRegTrashAlt, FaRegStar, FaMicrochip, FaLightbulb, FaRegSmile, FaThermometerHalf, FaAllergies, FaPalette, FaWaveSquare } from "react-icons/fa"
+import { FaRegSmileBeam, FaSpa, FaCompressArrowsAlt, FaCut, FaRegSadTear, FaRegHeart, FaPills, FaHandHoldingMedical, FaShieldAlt, FaPaintBrush, FaTint, FaRegClock, FaMedkit, FaLeaf, FaShower, FaRegHandPeace, FaRegTrashAlt, FaRegStar, FaMicrochip, FaLightbulb, FaRegSmile, FaThermometerHalf, FaAllergies, FaPalette, FaWaveSquare, FaWater, FaSyringe, FaCamera, FaRegCircle, FaTachometerAlt, FaTag, FaBolt } from "react-icons/fa"
 
 
 const ServicesDetails = () => {
@@ -77,14 +77,20 @@ const ServicesDetails = () => {
                     points: [
                         {
                             icon: FaLightbulb, // Consider an icon related to hair reduction
-                            title: "Permanent Hair Reduction",
-                            description: "Effectively reduces hair growth using laser technology.",
+                            title: "Full-Body Hair Reduction",
+                            description: "Achieve long-lasting hair reduction with advanced laser technology.",
                         },
                         {
                             icon: FaRegSmile,
-                            title: "Laser Facial & More",
-                            description: "Improves skin texture and promotes collagen production.",
+                            title: "Underarm Hair Reduction",
+                            description: "Experience smooth, hair-free underarms with targeted laser treatment.",
                         },
+                        {
+                            icon: FaLightbulb, // Consider an icon related to facial or upper lip hair reduction
+                            title: "Upper Lip Hair Reduction",
+                            description: "Gentle and precise laser treatment for long-lasting upper lip hair reduction.",
+                        }
+
 
                     ],
                 },
@@ -103,114 +109,128 @@ const ServicesDetails = () => {
                     // details: "Revitalize skin, reduce scars, and enhance youthful appearance effectively.",
                     points: [
                         {
-                            icon: FaPills, // Icon representing skin issues or acne
-                            title: "Acne & Blackheads",
-                            description: "Topical creams, peels, and lasers for clearer skin.",
-                        },
-
-                        {
-                            icon: FaRegHeart, // Icon representing healing or rejuvenation
-                            title: "Face PRP Therapy",
-                            description: "PRP therapy uses your blood to rejuvenate and heal skin.",
+                            icon: FaLightbulb, // Consider an icon related to skin care or pigmentation treatment
+                            title: "Melasma Treatment",
+                            description: "Reduce melasma and restore an even skin tone.",
                         }
                         ,
-                        {
-                            icon: FaShieldAlt, // Icon representing medication and treatment
-                            title: "Fungal Infection",
-                            description: "Managed with antifungal treatments for effective elimination.",
-                        },
 
                         {
-                            icon: FaThermometerHalf, // Icon representing care and treatment
-                            title: "Eczema and Pimples",
-                            description: "Eczema managed with moisturizers; pimples with treatments.",
-                        },
+                            icon: FaLightbulb, // Consider an icon related to skin tone or pigmentation
+                            title: "Hyperpigmentation Treatment",
+                            description: "Diminish dark spots and achieve a balanced complexion.",
+                        }
+
+                        ,
+                        {
+                            icon: FaLeaf, // Suggesting an icon related to skin care or renewal
+                            title: "Chemical Peeling",
+                            description: "Reveal fresh, radiant skin with targeted exfoliation treatment.",
+                        }
+                        ,
+
+                        {
+                            icon: FaRegSmile, // Consider an icon representing clear or healthy skin
+                            title: "Treatment for Acne & Melasma",
+                            description: "Target acne and melasma for clearer, healthier skin.",
+                        }
+                        ,
 
                     ],
                 },
                 {
-                    url: "https://img.freepik.com/free-photo/skin-allergy-reaction-person-s-arm_23-2149140472.jpg?t=st=1729249231~exp=1729252831~hmac=9cd184865cebb142f6ff685e87dca07ce046c5d3e9ea7024a95f517fc5a6c86e&w=900",
-                    imgTitle: "Q-Switch Laser",
+                    url: "https://img.freepik.com/free-photo/female-client-salon-face-care-routine-with-cleansing-disks_23-2148875466.jpg?t=st=1730182057~exp=1730185657~hmac=6b8918b61f179af816a6e3a821107c9f3f5920a0f1a876c51a7eec02a22ab19e&w=900",
+                    imgTitle: "Comprehensive Skin Treatments",
                     // details: "Minimally invasive treatment for all skin types, ensuring comfort and precision.",
                     points: [
                         {
-                            icon: FaAllergies, // Icon representing protection and treatment
-                            title: "Skin Allergy",
-                            description: "Treated with antihistamines, creams, and avoiding allergens.",
-                        },
-                        {
-                            icon: FaRegHeart, // Icon representing care for skin health
-                            title: "Skin Problems",
-                            description: "Managed with routines and medications for healthier skin.",
+                            icon: FaWater, // Consider an icon related to hydration or facial treatments
+                            title: "Hydrafacial",
+                            description: "Deeply cleanse and hydrate for radiant skin.",
                         }
                         ,
                         {
-                            icon: FaPalette, // Icon representing skin tone and color
-                            title: "Pigmentation",
-                            description: "Lightens dark spots and evens skin tone.",
+                            icon: FaRegStar, // Consider an icon related to skin rejuvenation
+                            title: "Microneedling",
+                            description: "Stimulate collagen production for smoother skin."
                         }
+
                         ,
                         {
-                            icon: FaRegSmileBeam, // Icon representing surgical removal
-                            title: "Mole Removal",
-                            description: "Laser, cryotherapy, or surgery removes moles safely.",
+                            icon: FaSyringe, // Consider an icon related to injectables or facial aesthetics
+                            title: "Botox Therapy",
+                            description: "Reduce wrinkles and enhance facial contours."
                         }
+
+                        ,
+                        {
+                            icon: FaLeaf, // Consider an icon related to skin health or detox
+                            title: "Glutathione Treatment for Dark Skin",
+                            description: "Brighten and even skin tone with antioxidants."
+                        }
+
                         ,
                     ],
                 },
                 {
                     url: "https://img.freepik.com/free-photo/woman-spa-having-skin-treatment_23-2148825320.jpg?t=st=1729249297~exp=1729252897~hmac=2913eead9fb1c66f38e2444ee0be9eaa8f71e8cf9a250c09305ea4851f0fdb53&w=900",
-                    imgTitle: "Diode Laser",
+                    imgTitle: "Q-Switch Treatments",
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {
-                            icon: FaCut, // Icon representing surgical procedures
-                            title: "Skin Tag Removal",
-                            description: "Laser, cryotherapy, or surgery safely removes skin tags.",
+                            icon: FaCamera, // Consider an icon related to facial treatments or rejuvenation
+                            title: "Photo Facial",
+                            description: "Brighten and rejuvenate skin using light therapy.",
+                        }
+
+                        ,
+                        {
+                            icon: FaRegCircle, // Consider an icon related to carbon or detoxification
+                            title: "Carbon Facial",
+                            description: "Deeply cleanse and exfoliate for radiant skin.",
+                        }
+
+                        ,
+                        {
+                            icon: FaTachometerAlt, // Consider an icon related to tightening or lifting
+                            title: "Skin Tightening",
+                            description: "Enhance firmness and elasticity for youthful skin.",
                         }
                         ,
                         {
-                            icon: FaTint, // Icon representing skin treatment or pigmentation
-                            title: "Melasma / Dark Spots",
-                            description: "Chemical peels and lasers lighten dark spots effectively.",
+                            icon: FaLightbulb, // Consider an icon related to laser treatments or skin care
+                            title: "IPL Laser for Pigmentation",
+                            description: "Reduce pigmentation and achieve an even skin tone.",
                         }
-                        ,
-                        {
-                            icon: FaThermometerHalf, // Icon representing aging or time
-                            title: "Wrinkles & Psoriasis",
-                            description: "Wrinkles treated with Botox psoriasis managed with therapies.",
-                        },
-                        {
-                            icon: FaRegClock, // Icon representing aging
-                            title: "Anti-Aging Treatment",
-                            description: "Botox, fillers, and lasers restore youthful skin appearance.",
-                        }
+
 
 
 
                     ],
                 },
                 {
-                    url: "https://img.freepik.com/free-photo/girl-spa-salon-receives-back-neck-massage-lies-cosmetology-table-relaxed-enjoys-process_343596-4329.jpg?t=st=1729249436~exp=1729253036~hmac=0c5b305e2e64c9dc8f30b9b2fe0874bd2879ff2c633d8ed6063e513772245b61&w=900",
-                    imgTitle: "Diode Laser",
+                    url: "https://img.freepik.com/free-photo/close-up-woman-applying-cream-mole_23-2149359570.jpg?t=st=1730181267~exp=1730184867~hmac=20baf9a86da4d47a1cd440191044e2b6a32e98c95b9be9285b577509ac21757a&w=900",
+                    imgTitle: "Radio Frequency Theory",
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {
-                            icon: FaWaveSquare, // Icon representing surgical procedures
-                            title: "Radio Frequency Therapy",
-                            description: "Stimulates collagen for smoother, firmer skin appearance.",
+                            icon: FaBolt, // Consider an icon related to radio frequency or energy
+                            title: "Radio Frequency",
+                            description: "Tighten skin and reduce wrinkles with radio frequency technology.",
                         }
+
                         ,
                         {
-                            icon: FaTint, // Icon representing skin treatment or pigmentation
-                            title: "Facial Threads & Carbon Facial",
-                            description: "Dissolvable threads lift sagging skin; carbon facials refine pores.",
+                            icon: FaTag, // Consider an icon related to skin or dermatological procedures
+                            title: "Skin Tag Removal",
+                            description: "Safe and effective removal of skin tags for smooth skin.",
                         }
+
                         ,
                         {
-                            icon: FaThermometerHalf, // Icon representing aging or time
-                            title: "HIFU Face Tightening & Many More",
-                            description: "HIFU boosts collagen, tightening skin with complementary skin treatments.",
+                            icon: FaCut, // Consider an icon related to dermatological or surgical procedures
+                            title: "Mole Removal",
+                            description: "Professional removal of moles for a clear complexion.",
                         }
 
 
@@ -230,96 +250,33 @@ const ServicesDetails = () => {
                 {
                     url: "https://img.freepik.com/free-photo/woman-getting-hair-loss-treatment-clinic_23-2149152750.jpg?t=st=1729248444~exp=1729252044~hmac=6bfc4bd1b225cfeff3d11f5d43b003dbd56940ab9206c36d32bdb082c22447b6&w=900",
                     imgTitle: "Hair Treatment",
-                    details: "Revitalize skin, reduce scars, and enhance youthful appearance effectively.",
+                    // details: "Revitalize skin, reduce scars, and enhance youthful appearance effectively.",
                     points: [
+                        {
+                            icon: FaLightbulb, // Consider an icon related to laser treatments or hair care
+                            title: "Hair Laser Light Therapy",
+                            description: "Stimulate hair growth and reduce hair loss with advanced laser technology.",
+                        },
+
                         {
                             icon: FaCut, // Icon representing hair transplant/treatment
                             title: "Hair Transplant",
                             description: "Hair transplant relocates follicles for natural-looking, permanent hair restoration",
                         }
                         ,
-
-                        {
-                            icon: FaMedkit, // Icon representing medical or restorative treatments
-                            title: "PRP Therapy & GFC Therapy",
-                            description: "PRP and GFC therapies stimulate hair growth using blood-derived factors.",
-                        }
-
-                        ,
-                        // {
-                        //     icon: FaPills, // Icon representing medication and treatment
-                        //     title: "Fungal Infection",
-                        //     description: "Uses antifungals to eliminate infections and prevent recurrence.",
-                        // },
-
-                        // {
-                        //     icon: FaHandHoldingMedical, // Icon representing care and treatment
-                        //     title: "Eczema and Pimples",
-                        //     description: "Moisturizers and medications treat eczema and pimples.",
-                        // },
-
                     ],
                 },
-                {
-                    url: "https://img.freepik.com/free-photo/closeup-profile-portrait-upset-astonished-woman-looking-her-dry-hair-having-problems-needs-change-shampoo-special-treatment-trichological-clinic_176532-14933.jpg?t=st=1729248353~exp=1729251953~hmac=d693891ad434b93287823bd596e8ce8408d764f37e99f1e2e67de440758070bf&w=900",
-                    imgTitle: "Q-Switch Laser",
-                    // details: "Minimally invasive treatment for all skin types, ensuring comfort and precision.",
-                    points: [
-                        {
-                            icon: FaRegHeart, // Icon representing supportive treatments
-                            title: "Hair Loss Treatment",
-                            description: "ffective treatments to slow hair loss and strengthen existing hair.",
-                        }
-                        ,
-                        {
-                            icon: FaLeaf, // Icon symbolizing natural growth and hair health
-                            title: "Hair Growth",
-                            description: "Supports hair growth through care, nutrients, and targeted treatments.",
-                        }
 
-                        // ,
-                        // {
-                        //     icon: FaPaintBrush, // Icon representing skin tone and color
-                        //     title: "Pigmentation",
-                        //     description: "Treat dark spots for an even skin tone.",
-                        // }
-                        // ,
-                        // {
-                        //     icon: FaRegSmileBeam, // Icon representing surgical removal
-                        //     title: "Mole Removal",
-                        //     description: "Laser or surgery for safe mole removal.",
-                        // }
-                        // ,
-                    ],
-                },
                 {
-                    url: "https://img.freepik.com/free-photo/woman-getting-hair-loss-treatment-clinic_23-2149152754.jpg?t=st=1729248206~exp=1729251806~hmac=08c5524ac8c9d15179e1410f403cf861200f0cdd8ceceb5d91fa2f139120bee7&w=900",
-                    imgTitle: "Diode Laser",
+                    url: "https://img.freepik.com/free-photo/young-woman-getting-prp-injection-high-angle_23-2149341429.jpg?t=st=1730182391~exp=1730185991~hmac=d64d06c732d848abef6e04fefcafc56de5a262c4f059137d1948a186e16747c9&w=900",
+                    imgTitle: "PRP Hair Restoration",
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {
-                            icon: FaShower, // Icon symbolizing scalp care and cleansing
-                            title: "Dandruff Treatment",
-                            description: "Eliminates flakes and itchiness using medicated shampoos and moisturizers.",
-                        },
-                        {
-                            icon: FaLeaf, // Icon representing growth and nourishment
-                            title: "Anti-Thinning Treatment",
-                            description: "Strengthens hair, reduces fall using serums and scalp massages.",
+                            icon: FaSyringe, // Consider an icon related to injections or rejuvenation
+                            title: "PRP Therapy",
+                            description: "Revitalize your hair with PRP Therapy, utilizing your body's own growth factors to stimulate hair follicles, promote natural growth, and restore thickness for a fuller, healthier appearance."
                         }
-
-
-                        // {
-                        //     icon: FaRegClock, // Icon representing aging or time
-                        //     title: "Wrinkles, Psoriasis",
-                        //     description: "Treats wrinkles; manages psoriasis inflammation.",
-                        // },
-                        // {
-                        //     icon: FaRegClock, // Icon representing aging
-                        //     title: "Anti-Aging Treatment",
-                        //     description: "Reduces wrinkles and restores youthful appearance.",
-                        // }
-
 
 
                     ],
@@ -357,7 +314,7 @@ const ServicesDetails = () => {
 
                 {/* Display images related to the selected service in an alternating layout */}
                 {service.images.map((image, index) => (
-                    <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 py-10 px-5 ${index % 2 === 0 ? '' : 'lg:grid-flow-dense bg-[#FAF6F0]'}`}>
+                    <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-8 sm:mb-10 py-10 px-5 ${index % 2 === 0 ? '' : 'lg:grid-flow-dense bg-[#FAF6F0]'}`}>
                         {/* Image */}
                         <div className={`service-image ${index % 2 === 0 ? '' : 'lg:order-last '}`}>
                             <img
