@@ -36,7 +36,7 @@ const Hero = () => {
                     sm:h-[50rem] 
                     md:h-[40rem] 
                     lg:h-[48rem] 
-                    xl:h-[38rem] 
+                    xl:h-[50rem] 
                     object-cover 
                 "
             />
