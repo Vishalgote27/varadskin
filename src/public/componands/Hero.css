@@ -2,7 +2,7 @@
 
 .banner {
     margin-top: 3.5rem;
-    /* mt-14 */
+    /* Adjust this as needed */
     position: relative;
     width: 100%;
     height: 40rem;
@@ -18,6 +18,8 @@
     /* Maintain aspect ratio */
     object-fit: cover;
     /* Cover the container while preserving aspect ratio */
+    display: block;
+    /* Prevents bottom space by treating the image as a block element */
 }
 
 /* Height adjustments for various screen sizes */

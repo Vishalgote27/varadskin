@@ -6,7 +6,7 @@ const AboutUs = () => {
     return <>
 
 
-        <div className="bg-[#C59847]  text-white h-36 sm:h-52 flex items-center justify-center text-center">
+        <div className="bg-[#C59847]  text-white h-36 sm:h-40 flex items-center justify-center text-center">
             <h1 className="text-2xl sm:text-4xl font-bold">
                 Discover the perfect skincare
                 <br />

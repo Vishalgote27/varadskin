@@ -7,7 +7,7 @@ import WhyChoose from './WhyChoose'
 import NewsLetter from './NewsLetter'
 import WhyBook from './WhyBook'
 import Faq from './Faq'
-import "./Hero.css"
+// import "./Hero.css"
 
 
 
@@ -23,11 +23,22 @@ const Hero = () => {
 
         </div> */}
 
-        <div className="banner">
-            {/* Responsive Image */}
+
+
+        <div className="relative w-full overflow-hidden mt-14">
             <img
-                src="/photos/Green and Blue Simple Blocks Beauty Landing Page Wireframe Website UI Prototype_page-0001 (1).jpg"
+                src="/photos/newvaradskincare.jpg"
                 alt="Banner Image"
+                className="
+                    block 
+                    w-full 
+                    h-[40rem] 
+                    sm:h-[50rem] 
+                    md:h-[40rem] 
+                    lg:h-[48rem] 
+                    xl:h-[38rem] 
+                    object-cover 
+                "
             />
         </div>
 
