@@ -7,6 +7,7 @@ import WhyChoose from './WhyChoose'
 import NewsLetter from './NewsLetter'
 import WhyBook from './WhyBook'
 import Faq from './Faq'
+import "./Hero.css"
 
 
 
@@ -22,28 +23,15 @@ const Hero = () => {
 
         </div> */}
 
+        <div className="banner">
+            {/* Responsive Image */}
+            <img
+                src="/photos/Green and Blue Simple Blocks Beauty Landing Page Wireframe Website UI Prototype_page-0001 (1).jpg"
+                alt="Banner Image"
+            />
+        </div>
 
-        <div
-            className="
-    mt-14 
-    sm:mt-10 
-    lg:mt-10 
-    xl:mt-10 
-    h-40  /* Mobile height */ 
-    sm:h-80 /* Small screens */ 
-    md:h-[32rem] /* Medium screens */ 
-    lg:h-[38rem] /* Large screens */ 
-    xl:h-[40rem] /* Extra-large screens */ 
-    w-full 
-    mx-auto 
-    relative"
-            style={{
-                backgroundImage: `url('/photos/Green and Blue Simple Blocks Beauty Landing Page Wireframe Website UI Prototype_page-0001 (1).jpg')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-            }}
-        ></div>
+
         <AboutUs />
         {/* <WhyChoose /> */}
         <Services />

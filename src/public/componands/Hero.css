@@ -1,8 +1,50 @@
-.hero {
-    background-image: url('/photos/Maroon Clean Beauty Clinic Presentation_page-0001.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+/* Banner.css */
+
+.banner {
+    margin-top: 3.5rem;
+    /* mt-14 */
+    position: relative;
     width: 100%;
-    background-repeat: no-repeat;
+    height: 40rem;
+    /* Default height for larger screens */
+    overflow: hidden;
+    /* Hide any overflow */
+}
+
+.banner img {
+    width: 100%;
+    /* Make image take full width */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Cover the container while preserving aspect ratio */
+}
+
+/* Height adjustments for various screen sizes */
+@media (min-width: 640px) {
+    .banner {
+        height: 50rem;
+        /* Height for small screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .banner {
+        height: 40rem;
+        /* Height for medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        height: 48rem;
+        /* Height for large screens */
+    }
+}
+
+@media (min-width: 1280px) {
+    .banner {
+        height: 50rem;
+        /* Height for extra-large screens */
+    }
 }
