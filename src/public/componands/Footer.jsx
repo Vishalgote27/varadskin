@@ -115,38 +115,7 @@ const Footer = () => {
 
 
 
-        <div
-            className="
-   mt-14
-   sm:mt-10
-   lg:mt-10
-   xl:mt-10
-     h-52     /* Mobile height */
-    sm:h-96   /* Small screens */
-    md:h-[28rem]   /* Medium screens */
-    lg:h-[38rem]  /* Large screens */
-    xl:h-[38rem]  /* Extra-large screens */
-    w-full
-            mx-auto
-    relative"
-            style={{
-                // backgroundImage: `url('/photos/Green and Blue Simple Blocks Beauty Landing Page Wireframe Website UI Prototype_page-0001.jpg')`,
-                // backgroundImage: `url('/photos/Green and Blue Simple Blocks Beauty Landing Page Wireframe Website UI Prototype_page-0001 (1).jpg')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
 
-            }}
-        >
-
-
-
-
-
-
-
-
-        </div>
 
 
     </>

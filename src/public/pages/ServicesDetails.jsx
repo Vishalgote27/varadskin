@@ -120,7 +120,7 @@ const ServicesDetails = () => {
                     ],
                 },
                 {
-                    url: "https://img.freepik.com/free-photo/woman-cosmetology-studio-laser-hair-removal_1157-34939.jpg?t=st=1730348826~exp=1730352426~hmac=bee893dd67d83e4693bb642e6841cd042633b9dd37986a33d21838aabf57a427&w=900",
+                    url: "/photos/Before-and-After-Tattoo-Removal-Get-the-Best-Res-34.jpg",
                     imgTitle: "Pico Laser Treatment",
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
@@ -373,77 +373,71 @@ const ServicesDetails = () => {
         return <h2>Service not found</h2>;
     }
     return <>
-        <div className="service-details-container py-12 ">
+
+
+        <div className="service-details-container py-12">
             {/* Hero Banner */}
             <div
-                className="hero-banner bg-cover bg-center flex items-center justify-center text-center mb-12 
-             h-40 sm:h-60 md:h-80 lg:h-72 "
+                className="hero-banner bg-cover bg-center flex items-center justify-center text-center mb-12 h-40 sm:h-60 md:h-80 lg:h-72"
                 style={{
                     backgroundImage: `url(${service.backgroundImage})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
-            >
+            ></div>
 
-
-            </div>
-            {/* bg-[#FAF6F0] */}
             <div className="container mx-auto px-6 lg:px-24">
                 <h2 className="text-4xl font-bold text-black mb-6 text-center">{service.title}</h2>
                 <p className="text-xl text-gray-600 mb-8 text-center">{service.description}</p>
+            </div>
 
-                {/* Display images related to the selected service in an alternating layout */}
-                {service.images.map((image, index) => (
-                    <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-8 sm:mb-10 py-10 px-5 ${index % 2 === 0 ? '' : 'lg:grid-flow-dense bg-[#FAF6F0]'}`}>
-                        {/* Image */}
-                        <div className={`service-image ${index % 2 === 0 ? '' : 'lg:order-last '}`}>
-                            <img
-                                src={image.url}
-                                alt={`Image ${index + 1} for ${service.title}`}
-                                className="w-full h-96 object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
-                            />
-                        </div>
-
-                        {/* Information */}
-                        <div className="service-info flex flex-col justify-cente">
-                            <h3 className="text-3xl font-bold text-[#C59847] mb-2">{image.imgTitle} </h3>
-                            <p className="text-lg text-gray-500">{image.details}</p>
-
-                            {/* Points Info with Icon */}
-                            {/* <div className="mt-1">
-                                {image.points.map((point, pointIndex) => (
-                                    <div key={pointIndex} className="flex items-center mt-4">
-                                        {React.createElement(point.icon, { className: "text-blue-600 text-2xl mr-5" })}
-
-                                        <div>
-                                            <h4 className="font-semibold text-lg text-gray-900">{point.title}</h4>
-                                            <p className="text-gray-600 text-md">{point.description}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div> */}
-                            <div className="mt-1">
-                                {image.points.map((point, pointIndex) => (
-                                    <div
-                                        key={pointIndex}
-                                        className="group flex items-center bg-[#FAF6F0] p-4 rounded-md shadow-md hover:bg-[#C59847] transition-all duration-300 mt-4"
-                                    >
-                                        {React.createElement(point.icon, { className: "text-[#C59847] group-hover:text-white text-2xl mr-5" })}
-                                        <div>
-                                            <h4 className="font-semibold text-lg text-black group-hover:text-white">{point.title}</h4>
-                                            <p className="text-gray-600 text-md group-hover:text-gray-200">{point.description}</p>
-                                        </div>
-                                    </div>
-                                ))}
+            {/* Display images with alternating full-width background sections */}
+            {service.images.map((image, index) => (
+                <div
+                    key={index}
+                    className={`py-12 ${index % 2 !== 0 ? 'bg-[#FAF6F0]' : ''}`} // Full-width bg-[#FAF6F0] for odd-indexed sections
+                >
+                    <div className="container mx-auto px-6 lg:px-24">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:mb-10">
+                            {/* Image Section */}
+                            <div className={`${index % 2 !== 0 ? 'lg:order-last' : ''} flex items-center`}>
+                                <img
+                                    src={image.url}
+                                    alt={`Image ${index + 1} for ${service.title}`}
+                                    className="w-full h-60 sm:h-96 object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
+                                />
                             </div>
 
+                            {/* Information Section */}
+                            <div className="service-info flex flex-col justify-center space-y-4">
+                                <h3 className="text-3xl font-bold text-[#C59847]">{image.imgTitle}</h3>
+                                <p className="text-lg text-gray-500 max-h-40 overflow-hidden">{image.details}</p>
 
-
+                                {/* Points with Icons */}
+                                <div className="space-y-3">
+                                    {image.points.map((point, pointIndex) => (
+                                        <div
+                                            key={pointIndex}
+                                            className="group flex items-center p-4 rounded-md shadow-md hover:bg-[#C59847] transition duration-300 bg-white"
+                                        >
+                                            {React.createElement(point.icon, {
+                                                className: 'text-[#C59847] group-hover:text-white text-2xl mr-5',
+                                            })}
+                                            <div>
+                                                <h4 className="font-semibold text-lg text-black group-hover:text-white">{point.title}</h4>
+                                                <p className="text-gray-600 text-md group-hover:text-gray-200 ">{point.description}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </div>
-                ))}
-            </div>
+                </div>
+            ))}
         </div>
+
+
     </>
 }
 

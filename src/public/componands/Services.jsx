@@ -24,7 +24,7 @@ const Services = () => {
     ];
 
     return <>
-        <div className="min-h-screen sm:py-12">
+        <div className="sm:py-12">
             <div className="container mx-auto px-6 lg:px-24">
                 <h2 className="font-semibold text-md text-center mb-5 text-[#C59847]">
                     OUR SIGNATURE SERVICES

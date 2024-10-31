@@ -50,7 +50,7 @@ const Contact = () => {
         </div>
 
 
-        <div className="min-h-screen flex items-center justify-center py-14 px-6 sm:px-24 ">
+        <div className=" flex items-center justify-center py-14 px-6 sm:px-24 ">
             <ToastContainer />
             <div className="flex flex-col lg:flex-row w-full rounded-lg shadow-xl overflow-hidden bg-white">
 
