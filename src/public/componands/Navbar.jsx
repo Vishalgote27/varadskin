@@ -11,9 +11,10 @@ const Navbar = () => {
 
     return (
         <>
+
             {/* bg-[#FAF6F0] */}
             <nav className="bg-[#FAF6F0] text-black shadow-xs fixed top-0 left-0 w-full z-50 ">
-                <div className="max-w-7xl ">
+                <div className="max-w-7xl px-5">
                     <div className="flex justify-between items-center h-20">
                         <div className="flex items-center">
                             <img className="h-20" src="/photos/Beige Red Gift Box Giveaway Instagram Post (1).png" alt="sitelogo" />

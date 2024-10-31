@@ -5,7 +5,7 @@ import Footer from './componands/Footer'
 
 const PublicLayout = () => {
     return <>
-        {/* <Navbar /> */}
+        <Navbar />
         <Outlet />
         <Footer />
 
