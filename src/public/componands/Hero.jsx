@@ -24,13 +24,14 @@ const Hero = () => {
         </div> */}
 
 
-        <div className="relative w-full overflow-hidden mt-14">
+        <div className="banner-container mt-14">
             <img
                 src="/photos/newvaradskincare.jpg"
                 alt="Banner Image"
                 className="banner-image"
             />
         </div>
+
 
 
 
