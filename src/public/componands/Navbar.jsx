@@ -8,88 +8,53 @@ const Navbar = () => {
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
+    const handleLinkClick = (path) => {
+        setActive(path);
+        if (isOpen) toggleMenu(); // Close mobile menu when a link is clicked
+    };
 
     return (
-        <>
-
-            {/* bg-[#FAF6F0] */}
-            <nav className="bg-[#FAF6F0] text-black shadow-xs fixed top-0 left-0 w-full z-50 ">
-                <div className="max-w-7xl px-5">
-                    <div className="flex justify-between items-center h-20">
-                        <div className="flex items-center">
-                            <img className="h-20" src="/photos/Beige Red Gift Box Giveaway Instagram Post (1).png" alt="sitelogo" />
+        <nav className="bg-[#FAF6F0] text-black shadow-xs fixed top-0 left-0 w-full z-50">
+            <div className="max-w-7xl px-5">
+                <div className="flex justify-between items-center h-20">
+                    <div className="flex items-center">
+                        <img className="h-20" src="/photos/Beige Red Gift Box Giveaway Instagram Post (1).png" alt="sitelogo" />
+                        <Link to="/" onClick={() => handleLinkClick('/')}>
                             <span className="ml-1 uppercase font-bold text-sx tracking-wide text-[#C59847]">
-                                <Link to="/" onClick={() => setActive('/')}>Dr.Priyanka's
-                                    <br /><span className='text-xl'> Varad Skin Care</span> </Link>
+                                Dr.Priyanka's
+                                <br /><span className='text-xl'>Varad Skin Care</span>
                             </span>
-                        </div>
-                        <div className="hidden md:flex  lg:space-x-5 md:space-x-5">
-                            <p className={`relative group text-lg font-semibold transition duration-300 ease-in-out ${active === '/' ? 'bg-[#C59847] text-white' : 'text-black'} px-3 py-1 rounded-sm`}>
-                                <Link to="/" onClick={() => setActive('/')}>
-                                    Home
-                                </Link>
-                            </p>
-                            <p className={`relative group text-lg font-semibold transition duration-300 ease-in-out ${active === '/about' ? 'bg-[#C59847] text-white' : 'text-black'} px-3 py-1 rounded-sm`}>
-                                <Link to="/about" onClick={() => setActive('/about')}>
-                                    About
-                                </Link>
-                            </p>
-                            <p className={`relative group text-lg font-semibold transition duration-300 ease-in-out ${active === '/services' ? 'bg-[#C59847] text-white' : 'text-black'} px-3 py-1 rounded-sm`}>
-                                <Link to="/services" onClick={() => setActive('/services')}>
-                                    Services
-                                </Link>
-                            </p>
-                            <p className={`relative group text-lg font-semibold transition duration-300 ease-in-out ${active === '/contact' ? 'bg-[#C59847] text-white' : 'text-black'} px-3 py-1 rounded-sm`}>
-                                <Link to="/contact" onClick={() => setActive('/contact')}>
-                                    Contact
-                                </Link>
-                            </p>
-                        </div>
-
-                        {/* Mobile menu toggle */}
-                        <div className="md:hidden flex items-center">
-                            <button onClick={toggleMenu}>
-                                {isOpen ? (
-                                    <MdClose className="h-6 w-6 text-black" />
-                                ) : (
-                                    <MdMenu className="h-6 w-6 text-black" />
-                                )}
-                            </button>
-                        </div>
+                        </Link>
+                    </div>
+                    <div className="hidden md:flex space-x-5">
+                        {['/', '/about', '/services', '/contact'].map((path) => (
+                            <Link key={path} to={path} onClick={() => handleLinkClick(path)}>
+                                <p className={`relative group text-lg font-semibold transition duration-300 ease-in-out ${active === path ? 'bg-[#C59847] text-white' : 'text-black'} px-3 py-1 rounded-sm`}>
+                                    {path === '/' ? 'Home' : path.charAt(1).toUpperCase() + path.slice(2)}
+                                </p>
+                            </Link>
+                        ))}
+                    </div>
+                    <div className="md:hidden flex items-center">
+                        <button onClick={toggleMenu}>
+                            {isOpen ? <MdClose className="h-6 w-6 text-black" /> : <MdMenu className="h-6 w-6 text-black" />}
+                        </button>
                     </div>
                 </div>
+            </div>
 
-                {/* Mobile Menu */}
-                {isOpen && (
-                    <div className="md:hidden bg-[#FAF6F0] rounded-b-3xl">
-                        <Link to="/" onClick={() => { setActive('/'); toggleMenu(); }}>
-                            <p className={`block ${active === '/' ? 'bg-[#C59847] text-white' : 'text-black'} hover:bg-[#C59847] hover:text-white px-4 py-2`}>
-                                Home
+            {isOpen && (
+                <div className="md:hidden bg-[#FAF6F0] rounded-b-3xl">
+                    {['/', '/about', '/services', '/contact'].map((path) => (
+                        <Link key={path} to={path} onClick={() => handleLinkClick(path)}>
+                            <p className={`block ${active === path ? 'bg-[#C59847] text-white' : 'text-black'} hover:bg-[#C59847] hover:text-white px-4 py-2`}>
+                                {path === '/' ? 'Home' : path.charAt(1).toUpperCase() + path.slice(2)}
                             </p>
                         </Link>
-                        <Link to="/about" onClick={() => { setActive('/about'); toggleMenu(); }}>
-                            <p className={`block ${active === '/about' ? 'bg-[#C59847] text-white' : 'text-black'} hover:bg-[#C59847] hover:text-white px-4 py-2`}>
-                                About
-                            </p>
-                        </Link>
-                        <Link to="/services" onClick={() => { setActive('/services'); toggleMenu(); }}>
-                            <p className={`block ${active === '/services' ? 'bg-[#C59847] text-white' : 'text-black'} hover:bg-[#C59847] hover:text-white px-4 py-2`}>
-                                Services
-                            </p>
-                        </Link>
-                        <Link to="/contact" onClick={() => { setActive('/contact'); toggleMenu(); }}>
-                            <p className={`block ${active === '/contact' ? 'bg-[#C59847] text-white' : 'text-black'} hover:bg-[#C59847] hover:text-white px-4 py-2`}>
-                                Contact
-                            </p>
-                        </Link>
-
-                    </div>
-                )}
-            </nav>
-
-
-
-        </>
+                    ))}
+                </div>
+            )}
+        </nav>
     );
 };
 

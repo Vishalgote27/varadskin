@@ -1,9 +1,6 @@
 /* styles.css */
 
 /* Base Styles */
-
-
-
 .banner-image {
     display: block;
     width: 100%;
@@ -13,11 +10,10 @@
     /* Ensures the image covers the area */
 }
 
-/* Adjusting height for different screen sizes */
+/* Height adjustments for different screen sizes */
 @media (max-width: 639px) {
     .banner-image {
-        height: 11rem;
-        margin-top: 80px;
+        height: 15rem;
         /* Smaller height for mobile */
     }
 }
@@ -29,18 +25,29 @@
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     .banner-image {
-        height: 28rem;
-        /* Height for smaller laptops */
+        height: 38rem;
+
+        /* Height for small laptops */
     }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1281px) {
     .banner-image {
         height: 36rem;
         /* Height for larger desktops and laptops */
         max-height: 40rem;
         /* Optional: limit max height */
     }
+}
+
+/* Optional: Container styles */
+.banner-container {
+    max-width: 1280px;
+    /* Limit width for larger screens */
+    margin: 0 auto;
+    /* Center the container */
+    overflow: hidden;
+    /* Hide any overflow */
 }
