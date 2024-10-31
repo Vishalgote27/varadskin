@@ -15,14 +15,14 @@ const Navbar = () => {
 
     return (
         <nav className="bg-[#FAF6F0] text-black shadow-xs fixed top-0 left-0 w-full z-50">
-            <div className="max-w-7xl px-5">
+            <div className="max-w-7xl px-5 mx-auto"> {/* Centered container */}
                 <div className="flex justify-between items-center h-20">
                     <div className="flex items-center">
                         <img className="h-20" src="/photos/Beige Red Gift Box Giveaway Instagram Post (1).png" alt="sitelogo" />
                         <Link to="/" onClick={() => handleLinkClick('/')}>
                             <span className="ml-1 uppercase font-bold text-sx tracking-wide text-[#C59847]">
                                 Dr.Priyanka's
-                                <br /><span className='text-xl'>Varad Skin Care</span>
+                                <br /><span className="text-xl">Varad Skin Care</span>
                             </span>
                         </Link>
                     </div>
