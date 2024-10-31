@@ -7,7 +7,7 @@ import WhyChoose from './WhyChoose'
 import NewsLetter from './NewsLetter'
 import WhyBook from './WhyBook'
 import Faq from './Faq'
-import "./Hero.css"
+// import "./Hero.css"
 
 
 
@@ -24,13 +24,22 @@ const Hero = () => {
         </div> */}
 
 
-        <div className="banner-container relative w-full overflow-hidden mt-14">
+        <div className="relative w-full overflow-hidden mt-14">
             <img
-                src="/photos/vishalskin.jpg"
+                src="/photos/newvaradskincare.jpg"
                 alt="Banner Image"
-                className="banner-image"
+                className="
+            block 
+            w-full 
+            h-auto 
+            object-cover 
+            md:h-[25rem] 
+            lg:h-[36rem] 
+            max-h-[100vh]  // Ensures it doesn't exceed the viewport height
+        "
             />
         </div>
+
 
 
 
