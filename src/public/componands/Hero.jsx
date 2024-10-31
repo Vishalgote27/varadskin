@@ -27,14 +27,14 @@ const Hero = () => {
 
         <div className="relative w-full overflow-hidden mt-14">
             <img
-                src="/photos/varadhero.jpg"
+                src="/photos/newvaradskincare.jpg"
                 alt="Banner Image"
                 className="
                     block 
                     w-full 
                     mt-5
                     sm:mt-0
-                  xl:mt-20
+                    
                     h-[10rem] 
                     sm:h-[22rem] 
                     md:h-[25rem] 
