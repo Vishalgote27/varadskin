@@ -32,11 +32,13 @@ const Hero = () => {
                 className="
                     block 
                     w-full 
-                    h-[40rem] 
-                    sm:h-[50rem] 
-                    md:h-[40rem] 
-                    lg:h-[48rem] 
-                    xl:h-[54rem] 
+                    mt-5
+                    sm:mt-0
+                    h-[10rem] 
+                    sm:h-[22rem] 
+                    md:h-[25rem] 
+                    lg:h-[36rem] 
+                   
                     
                     object-cover 
                 "

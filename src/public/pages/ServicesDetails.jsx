@@ -23,24 +23,24 @@ const ServicesDetails = () => {
                     points: [
                         {
                             icon: FaRegHeart,
-                            title: "Acne Scars",
+                            title: "Scars",
                             description: "Fades acne scars, boosts skin collagen.",
                         },
                         {
                             icon: FaRegSmileBeam,
-                            title: "Anti-Aging",
+                            title: "wrinkles",
                             description: "Reduces wrinkles, revitalizes skin for a youthful glow.",
                         },
                         {
                             icon: FaRegHandPeace,
-                            title: "Skin Tightening",
+                            title: "Other Skin Condition",
                             description: "Stimulates collagen to firm and tighten skin effectively.",
                         },
-                        {
-                            icon: FaRegHeart,
-                            title: "Scar Reduction",
-                            description: "Enhances skin regeneration to improve scar texture effectively.",
-                        },
+                        // {
+                        //     icon: FaRegHeart,
+                        //     title: "Scar Reduction",
+                        //     description: "Enhances skin regeneration to improve scar texture effectively.",
+                        // },
                     ],
                 },
                 {
@@ -51,22 +51,22 @@ const ServicesDetails = () => {
                         {
                             icon: FaRegTrashAlt,
                             title: "Tattoo Removal",
-                            description: "Safely fades and removes unwanted tattoos using lasers.",
+                            description: "This laser treatment can remove blue, grey, and black tattoos. Darcer like usually more affective",
                         },
                         {
                             icon: FaRegStar,
-                            title: "Mole Removal",
-                            description: "Targets moles without damaging surrounding skin tissues.",
+                            title: "Treating Pigmentation",
+                            description: "This laser can treat various skin pigmentation issues, such as melasma, age spots, sunspots, sunburn birthmarks, and freckles.",
                         },
                         {
                             icon: FaRegSmileBeam,
-                            title: "Skin Rejuvenation",
-                            description: "Enhances skin texture and tone, reducing fine lines.",
+                            title: "Skin Remodeling",
+                            description: "This laser can treat fine lines, wrinkles, and skin sagging. It helps with skin tightening.",
                         },
                         {
                             icon: FaMicrochip,
-                            title: "Carbon Facial",
-                            description: "Cleanses pores and brightens skin with laser treatment.",
+                            title: "skin Toning",
+                            description: "This laser can treat skin tone and sun tan.",
                         },
                     ],
                 },
@@ -89,7 +89,77 @@ const ServicesDetails = () => {
                             icon: FaLightbulb, // Consider an icon related to facial or upper lip hair reduction
                             title: "Upper Lip Hair Reduction",
                             description: "Gentle and precise laser treatment for long-lasting upper lip hair reduction.",
-                        }
+                        },
+                        {
+                            icon: FaLightbulb, // Consider an icon related to hair reduction
+                            title: "Skin lighting Treatment",
+                            description: "It help to improve your skin tone",
+                        },
+
+
+                    ],
+                },
+                {
+                    url: "https://img.freepik.com/free-photo/laser-epilation-hair-removal-therapy_1303-23432.jpg?t=st=1730348712~exp=1730352312~hmac=21733398a24779047ab30aa409444f118a11eec23df38b894dcb3849c9ad3375&w=900",
+                    imgTitle: "IPL Laser",
+                    // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
+                    points: [
+                        {
+                            icon: FaLightbulb, // Consider an icon related to hair reduction
+                            title: "Anti-aging treatment",
+                            description: "It helps reduce freckles, sun tanning, and find wrinkles.",
+                        },
+                        {
+                            icon: FaRegSmile,
+                            title: "Photo Facial",
+                            description: "It helps with skin lightening treatment for hyperpigmentation",
+                        },
+
+
+
+                    ],
+                },
+                {
+                    url: "https://img.freepik.com/free-photo/woman-cosmetology-studio-laser-hair-removal_1157-34939.jpg?t=st=1730348826~exp=1730352426~hmac=bee893dd67d83e4693bb642e6841cd042633b9dd37986a33d21838aabf57a427&w=900",
+                    imgTitle: "Pico Laser Treatment",
+                    // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
+                    points: [
+                        {
+                            icon: FaLightbulb, // Consider an icon related to hair reduction
+                            title: "Tattoo Removal",
+                            description: "It helps with permanent tattoo removal",
+                        },
+                        {
+                            icon: FaRegSmile,
+                            title: "Skin Rejuvenation",
+                            description: "Fine Lines,Wrinkles,Sun Tan ",
+                        },
+                        {
+                            icon: FaRegSmile,
+                            title: " Stretch Marks Treatment",
+                            // description: "Fine Lines,Wrinkles,Sun Tan ",
+                        },
+                        {
+                            icon: FaRegSmile,
+                            title: "Skin Texture",
+                            description: "It improves skin texture and collagen production.",
+                        },
+                        {
+                            icon: FaRegSmile,
+                            title: "Enlarges pores",
+                            description: " It can help treat oily skin, acne, and enlarged pores.",
+                        },
+                        {
+                            icon: FaRegSmile,
+                            title: "Acne Scars",
+                            description: "It reduces acne scars.",
+                        },
+                        {
+                            icon: FaRegSmile,
+                            title: "Pigmentation",
+                            description: "It reduces hyperpigmentation.",
+                        },
+
 
 
                     ],
@@ -110,22 +180,18 @@ const ServicesDetails = () => {
                     points: [
                         {
                             icon: FaLightbulb, // Consider an icon related to skin care or pigmentation treatment
-                            title: "Melasma Treatment",
-                            description: "Reduce melasma and restore an even skin tone.",
+                            title: "Hydra Facials",
+                            description: "It reduces hyperpigmentation. It helps remove dead cells and clears pores by removing excess sebum and dead cells. It helps to reduce acne scars and the reappearance of acne. It helps to rejuvenate your skin and provides instant glow.",
                         }
                         ,
 
-                        {
-                            icon: FaLightbulb, // Consider an icon related to skin tone or pigmentation
-                            title: "Hyperpigmentation Treatment",
-                            description: "Diminish dark spots and achieve a balanced complexion.",
-                        }
+
 
                         ,
                         {
                             icon: FaLeaf, // Suggesting an icon related to skin care or renewal
                             title: "Chemical Peeling",
-                            description: "Reveal fresh, radiant skin with targeted exfoliation treatment.",
+                            description: "It helps with hyperpigmentation and melasma, and it is beneficial for severe acne conditions.",
                         }
                         ,
 
@@ -133,6 +199,11 @@ const ServicesDetails = () => {
                             icon: FaRegSmile, // Consider an icon representing clear or healthy skin
                             title: "Treatment for Acne & Melasma",
                             description: "Target acne and melasma for clearer, healthier skin.",
+                        },
+                        {
+                            icon: FaRegSmile, // Consider an icon representing clear or healthy skin
+                            title: "RF (Radio Frequency) treatment",
+                            description: "Mole removal and skin tag removal without blood loss",
                         }
                         ,
 
@@ -140,97 +211,106 @@ const ServicesDetails = () => {
                 },
                 {
                     url: "https://img.freepik.com/free-photo/female-client-salon-face-care-routine-with-cleansing-disks_23-2148875466.jpg?t=st=1730182057~exp=1730185657~hmac=6b8918b61f179af816a6e3a821107c9f3f5920a0f1a876c51a7eec02a22ab19e&w=900",
-                    imgTitle: "Comprehensive Skin Treatments",
+                    imgTitle: "Microneedling",
                     // details: "Minimally invasive treatment for all skin types, ensuring comfort and precision.",
                     points: [
                         {
                             icon: FaWater, // Consider an icon related to hydration or facial treatments
-                            title: "Hydrafacial",
+                            title: " It helps to Reduce the Acne scars",
                             description: "Deeply cleanse and hydrate for radiant skin.",
                         }
                         ,
                         {
                             icon: FaRegStar, // Consider an icon related to skin rejuvenation
-                            title: "Microneedling",
+                            title: "It help to Reduce, the injury scar",
                             description: "Stimulate collagen production for smoother skin."
                         }
 
                         ,
                         {
                             icon: FaSyringe, // Consider an icon related to injectables or facial aesthetics
-                            title: "Botox Therapy",
+                            title: "It help for Wrinkles fine line improvement ISC",
                             description: "Reduce wrinkles and enhance facial contours."
                         }
 
                         ,
-                        {
-                            icon: FaLeaf, // Consider an icon related to skin health or detox
-                            title: "Glutathione Treatment for Dark Skin",
-                            description: "Brighten and even skin tone with antioxidants."
-                        }
+                        // {
+                        //     icon: FaLeaf, // Consider an icon related to skin health or detox
+                        //     title: "Glutathione Treatment for Dark Skin",
+                        //     description: "Brighten and even skin tone with antioxidants."
+                        // }
 
                         ,
                     ],
                 },
+
                 {
-                    url: "https://img.freepik.com/free-photo/woman-spa-having-skin-treatment_23-2148825320.jpg?t=st=1729249297~exp=1729252897~hmac=2913eead9fb1c66f38e2444ee0be9eaa8f71e8cf9a250c09305ea4851f0fdb53&w=900",
-                    imgTitle: "Q-Switch Treatments",
+                    url: "https://aestheticclinicriyadh.com/wp-content/uploads/2023/10/Pico-Laser-Treatment-in-Riyadh-Saudi-Arabia-Cost-Price.jpg",
+                    imgTitle: "Botox therapy",
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {
                             icon: FaCamera, // Consider an icon related to facial treatments or rejuvenation
-                            title: "Photo Facial",
+                            title: "To Improve Forehead Lines",
                             description: "Brighten and rejuvenate skin using light therapy.",
-                        }
-
-                        ,
+                        },
                         {
                             icon: FaRegCircle, // Consider an icon related to carbon or detoxification
-                            title: "Carbon Facial",
+                            title: "To Improve Horizontal Lines of the Neck",
                             description: "Deeply cleanse and exfoliate for radiant skin.",
-                        }
-
-                        ,
+                        },
                         {
                             icon: FaTachometerAlt, // Consider an icon related to tightening or lifting
-                            title: "Skin Tightening",
+                            title: "To Improve Dimpling on the Chin",
                             description: "Enhance firmness and elasticity for youthful skin.",
-                        }
-                        ,
+                        },
                         {
                             icon: FaLightbulb, // Consider an icon related to laser treatments or skin care
-                            title: "IPL Laser for Pigmentation",
+                            title: " Drooping Corners of the Mouth",
                             description: "Reduce pigmentation and achieve an even skin tone.",
-                        }
-
-
-
+                        },
 
                     ],
                 },
+
                 {
-                    url: "https://img.freepik.com/free-photo/close-up-woman-applying-cream-mole_23-2149359570.jpg?t=st=1730181267~exp=1730184867~hmac=20baf9a86da4d47a1cd440191044e2b6a32e98c95b9be9285b577509ac21757a&w=900",
-                    imgTitle: "Radio Frequency Theory",
+                    url: "https://img.freepik.com/free-photo/beautician-doing-filler-injection-female-client_23-2148875479.jpg?t=st=1730348636~exp=1730352236~hmac=f25a70b0fa2bb2e8c8d41e3d45c81674bede2f5b5976050d539558349a320c0b&w=740",
+                    imgTitle: "Glutathione Treatment",
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {
                             icon: FaBolt, // Consider an icon related to radio frequency or energy
-                            title: "Radio Frequency",
+                            title: "Acne Treatment",
                             description: "Tighten skin and reduce wrinkles with radio frequency technology.",
                         }
 
                         ,
                         {
                             icon: FaTag, // Consider an icon related to skin or dermatological procedures
-                            title: "Skin Tag Removal",
+                            title: "Tmperpigmentation Treatment",
                             description: "Safe and effective removal of skin tags for smooth skin.",
                         }
 
                         ,
                         {
                             icon: FaCut, // Consider an icon related to dermatological or surgical procedures
-                            title: "Mole Removal",
+                            title: "Keloid Treatment",
                             description: "Professional removal of moles for a clear complexion.",
+                        },
+                        {
+                            icon: FaCut, // Consider an icon related to dermatological or surgical procedures
+                            title: "Injury scar | mark Treatment",
+                            description: "Professional removal of moles for a clear complexion.",
+                        },
+                        {
+                            icon: FaCut, // Consider an icon related to dermatological or surgical procedures
+                            title: "Dark cercals treatmit, for under eye",
+                            description: "Professional removal of moles for a clear complexion.",
+                        },
+                        {
+                            icon: FaLightbulb, // Consider an icon related to laser treatments or skin care
+                            title: "It help skin Brighting",
+                            description: "Reduce pigmentation and achieve an even skin tone.",
                         }
 
 
@@ -269,13 +349,13 @@ const ServicesDetails = () => {
 
                 {
                     url: "https://img.freepik.com/free-photo/young-woman-getting-prp-injection-high-angle_23-2149341429.jpg?t=st=1730182391~exp=1730185991~hmac=d64d06c732d848abef6e04fefcafc56de5a262c4f059137d1948a186e16747c9&w=900",
-                    imgTitle: "PRP Hair Restoration",
+                    imgTitle: " Hair PRP Treatment ",
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {
                             icon: FaSyringe, // Consider an icon related to injections or rejuvenation
-                            title: "PRP Therapy",
-                            description: "Revitalize your hair with PRP Therapy, utilizing your body's own growth factors to stimulate hair follicles, promote natural growth, and restore thickness for a fuller, healthier appearance."
+                            title: "PRP Treatment ",
+                            description: "This hair treatment addresses hair loss and controls hair fall by stimulating stem cells at the hair root. It increases blood supply to the hair follicles, promoting healthier hair growth."
                         }
 
 
@@ -346,7 +426,7 @@ const ServicesDetails = () => {
                                 {image.points.map((point, pointIndex) => (
                                     <div
                                         key={pointIndex}
-                                        className="group flex items-center bg-[#FAF6F0] p-2 rounded-md shadow-md hover:bg-[#C59847] transition-all duration-300 mt-4"
+                                        className="group flex items-center bg-[#FAF6F0] p-4 rounded-md shadow-md hover:bg-[#C59847] transition-all duration-300 mt-4"
                                     >
                                         {React.createElement(point.icon, { className: "text-[#C59847] group-hover:text-white text-2xl mr-5" })}
                                         <div>
