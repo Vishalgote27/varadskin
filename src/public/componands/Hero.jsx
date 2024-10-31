@@ -34,7 +34,7 @@ const Hero = () => {
                     w-full 
                     mt-5
                     sm:mt-0
-                  
+                  xl:mt-20
                     h-[10rem] 
                     sm:h-[22rem] 
                     md:h-[25rem] 

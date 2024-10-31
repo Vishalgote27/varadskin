@@ -22,7 +22,7 @@ const Navbar = () => {
                                     <br /><span className='text-xl'> Varad Skin Care</span> </Link>
                             </span>
                         </div>
-                        <div className="hidden md:flex justify-center items-center lg:space-x-5 md:space-x-5">
+                        <div className="hidden md:flex  lg:space-x-5 md:space-x-5">
                             <p className={`relative group text-lg font-semibold transition duration-300 ease-in-out ${active === '/' ? 'bg-[#C59847] text-white' : 'text-black'} px-3 py-1 rounded-sm`}>
                                 <Link to="/" onClick={() => setActive('/')}>
                                     Home
