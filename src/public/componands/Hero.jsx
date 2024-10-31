@@ -29,16 +29,16 @@ const Hero = () => {
                 src="/photos/newvaradskincare.jpg"
                 alt="Banner Image"
                 className="
-            block 
-            w-full 
-            h-auto 
-            object-cover 
-            md:h-[25rem] 
-            lg:h-[36rem] 
-            max-h-[100vh]  // Ensures it doesn't exceed the viewport height
+            block
+            w-full
+            h-auto
+            max-h-[100vh]
+            object-cover
+            mt-5  // top margin for spacing
         "
             />
         </div>
+
 
 
 
