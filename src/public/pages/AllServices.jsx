@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import coverImageAllService from '/photos/servicescover_page-0001.jpg'
+import coverImageAllService from '/photos/ourservices_page-0001.jpg'
 const AllServices = () => {
     const services = [
         {
@@ -23,13 +23,16 @@ const AllServices = () => {
         },
     ];
     return <>
-        <div className="w-full h-36 sm:h-60 md:h-60  lg:h-64 mt-14">
+
+
+        <div className="w-full h-auto sm:h-60 md:h-72 lg:h-80 xl:h-72 mt-14">
             <img
                 src={coverImageAllService}
                 alt="About Us Cover"
                 className="w-full h-full object-cover"
             />
         </div>
+
 
         <div className="min-h-screen py-14 ">
             <div className="container mx-auto px-6 lg:px-24">

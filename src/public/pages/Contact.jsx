@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com';
-import coverImageContact from '/photos/contactcover_page-0001.jpg'
+import coverImageContact from '/photos/conatct_page-0001.jpg'
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -41,7 +41,7 @@ const Contact = () => {
     };
     return <>
 
-        <div className="w-full h-36 sm:h-60 md:h-60  lg:h-64 mt-14">
+        <div className="w-full h-auto sm:h-60 md:h-72 lg:h-80 xl:h-72 mt-14">
             <img
                 src={coverImageContact}
                 alt="About Us Cover"
@@ -50,7 +50,7 @@ const Contact = () => {
         </div>
 
 
-        <div className=" flex items-center justify-center py-14 px-6 sm:px-24 ">
+        <div className="flex items-center justify-center py-14 px-6 sm:px-24 ">
             <ToastContainer />
             <div className="flex flex-col lg:flex-row w-full rounded-lg shadow-xl overflow-hidden bg-white">
 

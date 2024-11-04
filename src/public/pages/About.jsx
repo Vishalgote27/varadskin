@@ -2,15 +2,14 @@ import React from 'react';
 import { FaLeaf, FaUsers, FaRegSmile, FaCheckCircle, FaMagic, FaStar, FaClock, FaUserMd, FaShieldAlt } from 'react-icons/fa';
 import { MdOutlineHealthAndSafety } from 'react-icons/md';
 import { FaRegSmileBeam, FaSpa, FaCompressArrowsAlt, FaMedal } from "react-icons/fa";
-import coverImageAbout from '/photos/aboutuscover_page-0001.jpg'
-import ImageAbout from '/photos/aboutowner.jpg'
+import coverImageAbout from '/photos/aboutus_page-0001.jpg'
 
 const About = () => {
     return <>
         <div className="min-h-screen ">
 
             {/* Hero Section */}
-            <div className="w-full h-36 sm:h-60 md:h-60  lg:h-64 mt-14">
+            <div className="w-full h-auto sm:h-60 md:h-72 lg:h-80 xl:h-72 mt-14">
                 <img
                     src={coverImageAbout}
                     alt="About Us Cover"

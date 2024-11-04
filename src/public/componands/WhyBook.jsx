@@ -22,7 +22,7 @@ const WhyBook = () => {
                             Dr. Priyanka Patil
                         </h1>
                         <p className="text-gray-600 mb-4 text-lg">
-                            Dr. Priyanka Patil is a highly regarded skincare and aesthetic medical specialist with over 5 years of clinical experience. She has completed her Post Graduate Diploma in Clinical Cosmetology (PGDCC) at the esteemed Illamed Institute in Mumbai. Dr. Patil is dedicated to providing personalized care, utilizing advanced treatments and chemical cosmetics to help her patients achieve their skincare goals. Her expertise in the latest dermatological techniques ensures that every patient receives tailored solutions that promote healthy, radiant skin.
+                            Dr. Priyanka Patil is a highly regarded Varad skin care and aesthetic medical specialist with over 5 years of clinical experience. She has completed her Post Graduate Diploma in Clinical Cosmetology (PGDCC) at the esteemed Illamed Institute in Mumbai. Dr. Patil is dedicated to providing personalized care, utilizing advanced treatments and chemical cosmetics to help her patients achieve their skincare goals. Her expertise in the latest dermatological techniques ensures that every patient receives tailored solutions that promote healthy, radiant skin.
                         </p>
                         <div className="">
                             <Link to={"/contact"}>

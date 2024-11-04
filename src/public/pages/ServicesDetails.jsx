@@ -1,8 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import backgroundImage from '/photos/lasercover_page-0001.jpg'
-import skinImage from '/photos/skincover_page-0001.jpg'
-import hairImage from '/photos/haircover_page-0001.jpg'
+import backgroundImage from '/photos/lasertratment_page-0001.jpg'
+import skinImage from '/photos/skintratment_page-0001.jpg'
+import hairImage from '/photos/hairtreatment_page-0001.jpg'
 import { FaRegSmileBeam, FaSpa, FaCompressArrowsAlt, FaCut, FaRegSadTear, FaRegHeart, FaPills, FaHandHoldingMedical, FaShieldAlt, FaPaintBrush, FaTint, FaRegClock, FaMedkit, FaLeaf, FaShower, FaRegHandPeace, FaRegTrashAlt, FaRegStar, FaMicrochip, FaLightbulb, FaRegSmile, FaThermometerHalf, FaAllergies, FaPalette, FaWaveSquare, FaWater, FaSyringe, FaCamera, FaRegCircle, FaTachometerAlt, FaTag, FaBolt } from "react-icons/fa"
 
 
@@ -14,7 +14,7 @@ const ServicesDetails = () => {
             id: 1,
             title: "Laser Treatments",
             backgroundImage: backgroundImage,
-            description: "Revitalize skin, reduce scars, and enhance youthful appearance effectively.",
+            description: "Transform Your Skin with Targeted Laser Therapy.",
             images: [
                 {
                     url: "https://img.freepik.com/free-photo/young-beautiful-girl-lies-beautician-s-table-receives-procedures_343596-4226.jpg?t=st=1729063133~exp=1729066733~hmac=35faf231d00f66ac8084fdccdd85edd3ce29f86f18bd52acf048b8c631c74042&w=900",
@@ -325,7 +325,7 @@ const ServicesDetails = () => {
             id: 3,
             title: "Hair Treatment",
             backgroundImage: hairImage,
-            description: "Revitalize skin, reduce scars, and enhance youthful appearance effectively.",
+            description: "Revitalize your hair with treatments designed to restore strength, shine, and vitality.",
             images: [
                 {
                     url: "https://img.freepik.com/free-photo/woman-getting-hair-loss-treatment-clinic_23-2149152750.jpg?t=st=1729248444~exp=1729252044~hmac=6bfc4bd1b225cfeff3d11f5d43b003dbd56940ab9206c36d32bdb082c22447b6&w=900",
@@ -378,13 +378,12 @@ const ServicesDetails = () => {
         <div className="service-details-container py-12">
             {/* Hero Banner */}
             <div
-                className="hero-banner bg-cover bg-center flex items-center justify-center text-center mb-12 h-40 sm:h-60 md:h-80 lg:h-72"
+                className="hero-banner bg-cover bg-center flex items-center justify-center text-center mb-12 h-40 sm:h-60 md:h-80 lg:h-80 xl:h-72"
                 style={{
                     backgroundImage: `url(${service.backgroundImage})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
                 }}
             ></div>
+
 
             <div className="container mx-auto px-6 lg:px-24">
                 <h2 className="text-4xl font-bold text-black mb-6 text-center">{service.title}</h2>
