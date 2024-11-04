@@ -65,7 +65,7 @@ const WhyBook = () => {
                     {/* Info Section */}
                     <div className="w-full md:w-1/2">
                         <p className="text-[#C59847] font-semibold text-md mb-2 leading-relaxed">
-                            WHY BOOK WITH ME.
+                            WHY BOOK YOUR APPOINMENT WITH US.
                         </p>
                         <h1 className="text-2xl sm:text-4xl font-bold  mb-2 leading-tight">
                             Exceptional Care <br /> Tailored to You

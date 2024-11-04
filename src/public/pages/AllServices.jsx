@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import coverImageAllService from '/photos/ourservices_page-0001.jpg'
+import hairImage1 from '/photos/IMG_8336.jpg'
+
 const AllServices = () => {
     const services = [
         {
@@ -19,7 +21,7 @@ const AllServices = () => {
             id: 3,
             title: "Hair Treatment",
             description: "Restore your hair's natural beauty with our nourishing and revitalizing hair treatments today.",
-            imageUrl: "https://img.freepik.com/free-photo/woman-getting-treatment-hairdresser-shop_23-2149229766.jpg?t=st=1729062868~exp=1729066468~hmac=e72ae59bbf565ba17680d67487f65ec0fa14435f3374186130e472b619295de1&w=900",
+            imageUrl: hairImage1,
         },
     ];
     return <>

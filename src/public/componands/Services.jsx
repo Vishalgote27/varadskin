@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import hairImage from '/photos/IMG_8336.jpg'
 
 const Services = () => {
     const services = [
@@ -19,7 +20,7 @@ const Services = () => {
             id: 3,
             title: "Hair Treatment",
             description: "Restore your hair's natural beauty with our nourishing and revitalizing hair treatments today.",
-            imageUrl: "https://img.freepik.com/free-photo/woman-getting-treatment-hairdresser-shop_23-2149229766.jpg?t=st=1729062868~exp=1729066468~hmac=e72ae59bbf565ba17680d67487f65ec0fa14435f3374186130e472b619295de1&w=900",
+            imageUrl: hairImage,
         },
     ];
 
@@ -32,7 +33,7 @@ const Services = () => {
                 <h1 className="text-2xl sm:text-4xl font-bold text-center  mb-8 leading-tight">
                     Transformative Treatments <br /> Tailored To You
                 </h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
                     {services.map((service, index) => (
                         <div key={index} className="bg-[#FAF6F0] rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-xl">
                             <img

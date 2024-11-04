@@ -30,7 +30,7 @@ const About = () => {
                             Our Story
                         </h1>
                         <p className="text-lg text-gray-700 mb-4">
-                            Founded in 2020, <strong>Dr. Priyanka Patil's Skincare Clinic</strong> was established with a mission to provide advanced skincare solutions. With over 5 years of clinical and practical experience, Dr. Patil specializes in aesthetic medicine and chemical cosmetics, ensuring the highest standards of care for her patients.
+                            Founded in 2020, <strong>Dr. Priyanka Patil's Varad Skin Care Clinic</strong> was established with a mission to provide advanced skincare solutions. With over 5 years of clinical and practical experience, Dr. Patil specializes in aesthetic medicine and clinical Cosmetology, ensuring the highest standards of care for her patients.
                         </p>
                         <p className="text-lg text-gray-700 mb-4">
                             Our clinic is dedicated to helping you achieve healthy, radiant skin through personalized treatment plans that harness the power of both medical expertise and aesthetic artistry. We believe that every individual deserves to feel confident and beautiful in their skin.
@@ -143,7 +143,7 @@ const About = () => {
                             <div>
                                 <h4 className="text-xl font-semibold text-[#C59847] mb-1">Expert Practitioners</h4>
                                 <p className="text-lg text-gray-600">
-                                    Our highly trained dermatologists tailor treatments to meet your skin’s unique needs.
+                                    Our highly aesthetician and  trained Cosmetologist tailor treatments to meet your skin’s unique needs
                                 </p>
                             </div>
                         </div>

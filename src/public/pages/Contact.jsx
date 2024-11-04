@@ -129,7 +129,7 @@ const Contact = () => {
                         </p>
                         <p className="text-lg">
                             <FaMapMarkerAlt className="inline-block text-yellow-400 mr-2" />
-                            Girja Housing Society, Ramkrushan Complex, Pundlik Nagar, Garkheda, Chh. Sambhajinagar
+                            Girja Housing Society, Ramkrushana Complex, Pundlik Nagar, Garkheda, Chh. Sambhajinagar
                         </p>
                         <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: `url('/path-to-your-image.jpg')` }}></div>
                     </div>

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import backgroundImage from '/photos/lasertratment_page-0001.jpg'
 import skinImage from '/photos/skintratment_page-0001.jpg'
 import hairImage from '/photos/hairtreatment_page-0001.jpg'
-import { FaRegSmileBeam, FaSpa, FaCompressArrowsAlt, FaCut, FaRegSadTear, FaRegHeart, FaPills, FaHandHoldingMedical, FaShieldAlt, FaPaintBrush, FaTint, FaRegClock, FaMedkit, FaLeaf, FaShower, FaRegHandPeace, FaRegTrashAlt, FaRegStar, FaMicrochip, FaLightbulb, FaRegSmile, FaThermometerHalf, FaAllergies, FaPalette, FaWaveSquare, FaWater, FaSyringe, FaCamera, FaRegCircle, FaTachometerAlt, FaTag, FaBolt } from "react-icons/fa"
+import { FaRegSmileBeam, FaSpa, FaCompressArrowsAlt, FaCut, FaRegSadTear, FaRegHeart, FaPills, FaHandHoldingMedical, FaShieldAlt, FaPaintBrush, FaTint, FaRegClock, FaMedkit, FaLeaf, FaShower, FaRegHandPeace, FaRegTrashAlt, FaRegStar, FaMicrochip, FaLightbulb, FaRegSmile, FaThermometerHalf, FaAllergies, FaPalette, FaWaveSquare, FaWater, FaSyringe, FaCamera, FaRegCircle, FaTachometerAlt, FaTag, FaBolt, FaRegSun, FaEraser } from "react-icons/fa"
 
 
 const ServicesDetails = () => {
@@ -23,7 +23,7 @@ const ServicesDetails = () => {
                     points: [
                         {
                             icon: FaRegHeart,
-                            title: "Scars",
+                            title: "Acne Scars",
                             description: "Fades acne scars, boosts skin collagen.",
                         },
                         {
@@ -71,7 +71,8 @@ const ServicesDetails = () => {
                     ],
                 },
                 {
-                    url: "https://img.freepik.com/free-photo/female-patient-receiving-cosmetic-treatment_107420-65218.jpg?t=st=1729149907~exp=1729153507~hmac=060c919a78d81b337ce8edc7f556dd5224ca050f970544947fee751eaea474e4&w=900",
+
+                    url: "https://img.freepik.com/free-photo/laser-epilation-hair-removal-therapy_1303-23432.jpg?t=st=1730348712~exp=1730352312~hmac=21733398a24779047ab30aa409444f118a11eec23df38b894dcb3849c9ad3375&w=900",
                     imgTitle: "Diode Laser",
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
@@ -100,7 +101,8 @@ const ServicesDetails = () => {
                     ],
                 },
                 {
-                    url: "https://img.freepik.com/free-photo/laser-epilation-hair-removal-therapy_1303-23432.jpg?t=st=1730348712~exp=1730352312~hmac=21733398a24779047ab30aa409444f118a11eec23df38b894dcb3849c9ad3375&w=900",
+                    url: "https://img.freepik.com/free-photo/female-patient-receiving-cosmetic-treatment_107420-65218.jpg?t=st=1729149907~exp=1729153507~hmac=060c919a78d81b337ce8edc7f556dd5224ca050f970544947fee751eaea474e4&w=900",
+
                     imgTitle: "IPL Laser",
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
@@ -122,48 +124,45 @@ const ServicesDetails = () => {
                 {
                     url: "/photos/Before-and-After-Tattoo-Removal-Get-the-Best-Res-34.jpg",
                     imgTitle: "Pico Laser Treatment",
-                    // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {
-                            icon: FaLightbulb, // Consider an icon related to hair reduction
+                            icon: FaEraser, // Suitable icon for tattoo removal
                             title: "Tattoo Removal",
-                            description: "It helps with permanent tattoo removal",
+                            description: "Helps with permanent tattoo removal."
                         },
                         {
-                            icon: FaRegSmile,
+                            icon: FaRegSun, // Icon representing skin rejuvenation
                             title: "Skin Rejuvenation",
-                            description: "Fine Lines,Wrinkles,Sun Tan ",
+                            description: "Targets fine lines, wrinkles, and sun tan."
                         },
                         {
-                            icon: FaRegSmile,
-                            title: " Stretch Marks Treatment",
-                            // description: "Fine Lines,Wrinkles,Sun Tan ",
+                            icon: FaCut, // Icon for stretch marks treatment
+                            title: "Stretch Marks Treatment",
+                            description: "Effectively reduces the appearance of stretch marks."
                         },
                         {
-                            icon: FaRegSmile,
+                            icon: FaLeaf, // Icon representing skin texture improvement
                             title: "Skin Texture",
-                            description: "It improves skin texture and collagen production.",
+                            description: "Improves skin texture and collagen production."
                         },
                         {
-                            icon: FaRegSmile,
-                            title: "Enlarges pores",
-                            description: " It can help treat oily skin, acne, and enlarged pores.",
+                            icon: FaTint, // Icon representing enlarged pores
+                            title: "Enlarged Pores",
+                            description: "Helps treat oily skin, acne, and enlarged pores."
                         },
                         {
-                            icon: FaRegSmile,
+                            icon: FaLeaf, // Icon representing acne scars
                             title: "Acne Scars",
-                            description: "It reduces acne scars.",
+                            description: "Reduces the appearance of acne scars."
                         },
                         {
-                            icon: FaRegSmile,
+                            icon: FaPalette, // Icon representing pigmentation
                             title: "Pigmentation",
-                            description: "It reduces hyperpigmentation.",
-                        },
+                            description: "Reduces hyperpigmentation for a more even skin tone."
+                        }
+                    ]
+                }
 
-
-
-                    ],
-                },
             ],
         },
 
@@ -202,7 +201,7 @@ const ServicesDetails = () => {
                         },
                         {
                             icon: FaRegSmile, // Consider an icon representing clear or healthy skin
-                            title: "RF (Radio Frequency) treatment",
+                            title: "RF (Radio Frequency) Cotry",
                             description: "Mole removal and skin tag removal without blood loss",
                         }
                         ,
@@ -257,7 +256,7 @@ const ServicesDetails = () => {
                         {
                             icon: FaRegCircle, // Consider an icon related to carbon or detoxification
                             title: "To Improve Horizontal Lines of the Neck",
-                            description: "Deeply cleanse and exfoliate for radiant skin.",
+                            // description: "Deeply cleanse and exfoliate for radiant skin.",
                         },
                         {
                             icon: FaTachometerAlt, // Consider an icon related to tightening or lifting
@@ -267,7 +266,7 @@ const ServicesDetails = () => {
                         {
                             icon: FaLightbulb, // Consider an icon related to laser treatments or skin care
                             title: " Drooping Corners of the Mouth",
-                            description: "Reduce pigmentation and achieve an even skin tone.",
+                            // description: "Reduce pigmentation and achieve an even skin tone.",
                         },
 
                     ],
@@ -281,32 +280,37 @@ const ServicesDetails = () => {
                         {
                             icon: FaBolt, // Consider an icon related to radio frequency or energy
                             title: "Acne Treatment",
-                            description: "Tighten skin and reduce wrinkles with radio frequency technology.",
+                            description: "Effectively target acne and promote clear, radiant skin."
+
                         }
 
                         ,
                         {
                             icon: FaTag, // Consider an icon related to skin or dermatological procedures
-                            title: "Tmperpigmentation Treatment",
-                            description: "Safe and effective removal of skin tags for smooth skin.",
+                            title: "Hyper pigmentation Treatment",
+                            description: "Advanced hyperpigmentation treatments, designed to safely restore your skin's natural radiance.",
                         }
 
                         ,
                         {
                             icon: FaCut, // Consider an icon related to dermatological or surgical procedures
+
                             title: "Keloid Treatment",
-                            description: "Professional removal of moles for a clear complexion.",
+                            description: "Expert care for keloids with personalized treatment plans designed to reduce scarring and restore your skin's smooth appearance.",
+
+
                         },
                         {
                             icon: FaCut, // Consider an icon related to dermatological or surgical procedures
-                            title: "Injury scar | mark Treatment",
-                            description: "Professional removal of moles for a clear complexion.",
+                            title: "Injury Scar | Stretch Mark Treatment",
+                            description: "Reduce scars and stretch marks for smoother skin."
                         },
                         {
                             icon: FaCut, // Consider an icon related to dermatological or surgical procedures
-                            title: "Dark cercals treatmit, for under eye",
-                            description: "Professional removal of moles for a clear complexion.",
+                            title: "Dark Circles Treatment for Under Eyes",
+                            description: "Brighten and rejuvenate under eyes for a refreshed look."
                         },
+
                         {
                             icon: FaLightbulb, // Consider an icon related to laser treatments or skin care
                             title: "It help skin Brighting",
@@ -318,6 +322,38 @@ const ServicesDetails = () => {
 
                     ],
                 },
+                {
+                    url: "https://img.freepik.com/free-photo/front-view-young-female-green-t-shirt-showing-her-waist-pink-wall-waist-sport-exercise-workout-beauty-slim-athlete_140725-65212.jpg?t=st=1730723633~exp=1730727233~hmac=fbbbf060b77ee3f016af6f4c4c197d7c8cf6b791568b38d41c1b9b9ca77e9e47&w=900",
+                    imgTitle: "Weight Loss",
+                    points: [
+                        {
+                            icon: FaBolt, // Consider an icon related to weight loss or fitness
+                            title: "Personalized Weight Loss Plans",
+                            description: "Customized programs designed to help you achieve sustainable weight loss through nutrition and exercise guidance."
+                        },
+                        {
+                            icon: FaTag, // Consider an icon related to healthy living
+                            title: "Nutrition and Diet Consultation",
+                            description: "Expert advice on meal planning and healthy eating habits tailored to your lifestyle and weight loss goals."
+                        },
+                        {
+                            icon: FaCut, // Consider an icon related to fitness or body contouring
+                            title: "Body Contouring Treatments",
+                            description: "Advanced body sculpting techniques to target stubborn fat areas and enhance your body shape."
+                        },
+                        {
+                            icon: FaCut, // Consider an icon related to motivation and support
+                            title: "Ongoing Support and Coaching",
+                            description: "Continuous guidance and motivation to help you stay on track and reach your weight loss goals."
+                        },
+                        {
+                            icon: FaLightbulb, // Consider an icon related to fitness motivation
+                            title: "Transform Your Lifestyle",
+                            description: "Develop healthy habits for long-term weight management and overall wellness."
+                        }
+                    ]
+                }
+
             ],
         },
 
@@ -356,7 +392,13 @@ const ServicesDetails = () => {
                             icon: FaSyringe, // Consider an icon related to injections or rejuvenation
                             title: "PRP Treatment ",
                             description: "This hair treatment addresses hair loss and controls hair fall by stimulating stem cells at the hair root. It increases blood supply to the hair follicles, promoting healthier hair growth."
+                        },
+                        {
+                            icon: FaSyringe, // Consider an icon related to injections or rejuvenation
+                            title: "GFC Treatment",
+                            description: "GFC Treatment is effectively for hair loss by stimulating hair follicles and improving blood flow for healthier hair growth."
                         }
+
 
 
                     ],
