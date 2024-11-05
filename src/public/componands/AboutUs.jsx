@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaEye, FaLeaf, FaSeedling } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-
+import Aboutus from '/photos/aboutimg.avif'
 const AboutUs = () => {
     return <>
 
@@ -28,7 +28,7 @@ const AboutUs = () => {
                         <div className="relative w-full md:w-1/2 md:mr-10 "> {/* Added md:mr-10 for margin to the right */}
                             <div className="relative ">
                                 <img
-                                    src="https://img.freepik.com/premium-photo/woman-beauty-face-healthy-skin-natural-makeup-beautiful-young-model-studio-shot_431835-5247.jpg?w=826"
+                                    src={Aboutus}
                                     alt="About Us"
                                     className="w-full h-72 sm:h-96 xl:h-full object-cover rounded-lg shadow-lg"
                                 />

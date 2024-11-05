@@ -4,6 +4,8 @@ import { MdOutlineHealthAndSafety } from 'react-icons/md';
 import { FaRegSmileBeam, FaSpa, FaCompressArrowsAlt, FaMedal } from "react-icons/fa";
 import coverImageAbout from '/photos/aboutus_page-0001.jpg'
 
+import Aboutwhychoose from '/photos/aboutwhy.avif'
+
 const About = () => {
     return <>
         <div className="min-h-screen ">
@@ -118,7 +120,7 @@ const About = () => {
                     {/* Left Column (Image) */}
                     <div className="lg:w-1/2">
                         <img
-                            src="https://img.freepik.com/free-photo/young-woman-doing-special-procedure-improvements-skin_7502-7571.jpg?t=st=1729319945~exp=1729323545~hmac=53f7f4958994a6a3fb48f2ccf829fccf50652a4cfcad923b38fbb33c322f6feb&w=900" // Replace with your image
+                            src={Aboutwhychoose}// Replace with your image
                             alt="Why Choose Us"
                             className="rounded-md shadow-lg w-full h-auto lg:h-96 object-cover"
                         />

@@ -2,19 +2,23 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import hairImage from '/photos/IMG_8336.jpg'
 
+import laserteatment from "/photos/laser1.avif"
+
+import skintreatment from "/photos/skintreat.jpg"
+
 const Services = () => {
     const services = [
         {
             id: 1,
             title: "Laser Treatments",
             description: "Achieve smooth, radiant skin with our advanced laser treatments for lasting beauty.",
-            imageUrl: "https://img.freepik.com/free-photo/young-beautiful-girl-lies-beautician-s-table-receives-procedures_343596-4226.jpg?t=st=1729063133~exp=1729066733~hmac=35faf231d00f66ac8084fdccdd85edd3ce29f86f18bd52acf048b8c631c74042&w=900",
+            imageUrl: laserteatment,
         },
         {
             id: 2,
             title: "Skin Treatment",
             description: "Our expert consultants will guide you through personalized skincare routines tailored to your needs.",
-            imageUrl: "https://img.freepik.com/free-photo/high-angle-professional-putting-hair-net_23-2149628026.jpg?t=st=1728974505~exp=1728978105~hmac=6dd58d868eac5c8002109ac3ebb58b2e0f57f7d828429a6144320e3a9b9fda8a&w=360",
+            imageUrl: skintreatment,
         },
         {
             id: 3,

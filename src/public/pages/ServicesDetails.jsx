@@ -2,7 +2,24 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import backgroundImage from '/photos/lasertratment_page-0001.jpg'
 import skinImage from '/photos/skintratment_page-0001.jpg'
-import hairImage from '/photos/hairtreatment_page-0001.jpg'
+import hairImage from '/photos/hairtransplant_page-0001.jpg'
+
+import skin1 from "/photos/skintretment1.jpeg"
+import skin2 from "/photos/skintretment2.avif"
+import skin3 from "/photos/skintretment3.webp"
+import skin4 from "/photos/skintretment4.avif"
+import skin5 from "/photos/skintretment5.avif"
+
+
+import laser1 from "/photos/laser1.avif"
+import laser2 from "/photos/laser2.avif"
+import laser3 from "/photos/laser3.avif"
+import laser4 from "/photos/laser4.avif"
+
+import hair1 from "/photos/hair1.avif"
+import hair2 from "/photos/hair2.avif"
+
+
 import { FaRegSmileBeam, FaSpa, FaCompressArrowsAlt, FaCut, FaRegSadTear, FaRegHeart, FaPills, FaHandHoldingMedical, FaShieldAlt, FaPaintBrush, FaTint, FaRegClock, FaMedkit, FaLeaf, FaShower, FaRegHandPeace, FaRegTrashAlt, FaRegStar, FaMicrochip, FaLightbulb, FaRegSmile, FaThermometerHalf, FaAllergies, FaPalette, FaWaveSquare, FaWater, FaSyringe, FaCamera, FaRegCircle, FaTachometerAlt, FaTag, FaBolt, FaRegSun, FaEraser } from "react-icons/fa"
 
 
@@ -17,8 +34,9 @@ const ServicesDetails = () => {
             description: "Transform Your Skin with Targeted Laser Therapy.",
             images: [
                 {
-                    url: "https://img.freepik.com/free-photo/young-beautiful-girl-lies-beautician-s-table-receives-procedures_343596-4226.jpg?t=st=1729063133~exp=1729066733~hmac=35faf231d00f66ac8084fdccdd85edd3ce29f86f18bd52acf048b8c631c74042&w=900",
+                    // url: "https://img.freepik.com/free-photo/young-beautiful-girl-lies-beautician-s-table-receives-procedures_343596-4226.jpg?t=st=1729063133~exp=1729066733~hmac=35faf231d00f66ac8084fdccdd85edd3ce29f86f18bd52acf048b8c631c74042&w=900",
                     imgTitle: "Co2 Fractional Laser",
+                    url: laser1,
                     // details: "Treats scars, wrinkles, and skin texture issues.",
                     points: [
                         {
@@ -44,8 +62,9 @@ const ServicesDetails = () => {
                     ],
                 },
                 {
-                    url: "https://img.freepik.com/free-photo/young-woman-having-skincare-treatment_23-2148906446.jpg?t=st=1729149952~exp=1729153552~hmac=783832e768a05327e8405ffa242bc253543a592fd4fb51b5da53ed56cc0f4646&w=900",
+                    // url: "https://img.freepik.com/free-photo/young-woman-having-skincare-treatment_23-2148906446.jpg?t=st=1729149952~exp=1729153552~hmac=783832e768a05327e8405ffa242bc253543a592fd4fb51b5da53ed56cc0f4646&w=900",
                     imgTitle: "Q-Switch Laser",
+                    url: laser2,
                     // details: "Minimally invasive treatment for all skin types, ensuring comfort and precision.",
                     points: [
                         {
@@ -72,8 +91,9 @@ const ServicesDetails = () => {
                 },
                 {
 
-                    url: "https://img.freepik.com/free-photo/laser-epilation-hair-removal-therapy_1303-23432.jpg?t=st=1730348712~exp=1730352312~hmac=21733398a24779047ab30aa409444f118a11eec23df38b894dcb3849c9ad3375&w=900",
+                    // url: "https://img.freepik.com/free-photo/laser-epilation-hair-removal-therapy_1303-23432.jpg?t=st=1730348712~exp=1730352312~hmac=21733398a24779047ab30aa409444f118a11eec23df38b894dcb3849c9ad3375&w=900",
                     imgTitle: "Diode Laser",
+                    url: laser3,
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {
@@ -101,9 +121,10 @@ const ServicesDetails = () => {
                     ],
                 },
                 {
-                    url: "https://img.freepik.com/free-photo/female-patient-receiving-cosmetic-treatment_107420-65218.jpg?t=st=1729149907~exp=1729153507~hmac=060c919a78d81b337ce8edc7f556dd5224ca050f970544947fee751eaea474e4&w=900",
+                    // url: "https://img.freepik.com/free-photo/female-patient-receiving-cosmetic-treatment_107420-65218.jpg?t=st=1729149907~exp=1729153507~hmac=060c919a78d81b337ce8edc7f556dd5224ca050f970544947fee751eaea474e4&w=900",
 
                     imgTitle: "IPL Laser",
+                    url: laser4,
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {
@@ -173,7 +194,8 @@ const ServicesDetails = () => {
             description: "Revitalize skin, reduce scars, and enhance youthful appearance effectively.",
             images: [
                 {
-                    url: "https://crystalskinindia.com/wp-content/uploads/2024/09/facial-1024x683-1.jpeg",
+                    url: skin1,
+                    // url: "https://crystalskinindia.com/wp-content/uploads/2024/09/facial-1024x683-1.jpeg",
                     imgTitle: "Skin Tretment",
                     // details: "Revitalize skin, reduce scars, and enhance youthful appearance effectively.",
                     points: [
@@ -209,8 +231,10 @@ const ServicesDetails = () => {
                     ],
                 },
                 {
-                    url: "https://img.freepik.com/free-photo/female-client-salon-face-care-routine-with-cleansing-disks_23-2148875466.jpg?t=st=1730182057~exp=1730185657~hmac=6b8918b61f179af816a6e3a821107c9f3f5920a0f1a876c51a7eec02a22ab19e&w=900",
+
+                    // url: "https://img.freepik.com/free-photo/female-client-salon-face-care-routine-with-cleansing-disks_23-2148875466.jpg?t=st=1730182057~exp=1730185657~hmac=6b8918b61f179af816a6e3a821107c9f3f5920a0f1a876c51a7eec02a22ab19e&w=900",
                     imgTitle: "Microneedling",
+                    url: skin2,
                     // details: "Minimally invasive treatment for all skin types, ensuring comfort and precision.",
                     points: [
                         {
@@ -244,8 +268,9 @@ const ServicesDetails = () => {
                 },
 
                 {
-                    url: "https://aestheticclinicriyadh.com/wp-content/uploads/2023/10/Pico-Laser-Treatment-in-Riyadh-Saudi-Arabia-Cost-Price.jpg",
+                    // url: "https://aestheticclinicriyadh.com/wp-content/uploads/2023/10/Pico-Laser-Treatment-in-Riyadh-Saudi-Arabia-Cost-Price.jpg",
                     imgTitle: "Botox therapy",
+                    url: skin3,
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {
@@ -273,8 +298,9 @@ const ServicesDetails = () => {
                 },
 
                 {
-                    url: "https://img.freepik.com/free-photo/beautician-doing-filler-injection-female-client_23-2148875479.jpg?t=st=1730348636~exp=1730352236~hmac=f25a70b0fa2bb2e8c8d41e3d45c81674bede2f5b5976050d539558349a320c0b&w=740",
+                    // url: "https://img.freepik.com/free-photo/beautician-doing-filler-injection-female-client_23-2148875479.jpg?t=st=1730348636~exp=1730352236~hmac=f25a70b0fa2bb2e8c8d41e3d45c81674bede2f5b5976050d539558349a320c0b&w=740",
                     imgTitle: "Glutathione Treatment",
+                    url: skin4,
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {
@@ -323,8 +349,9 @@ const ServicesDetails = () => {
                     ],
                 },
                 {
-                    url: "https://img.freepik.com/free-photo/front-view-young-female-green-t-shirt-showing-her-waist-pink-wall-waist-sport-exercise-workout-beauty-slim-athlete_140725-65212.jpg?t=st=1730723633~exp=1730727233~hmac=fbbbf060b77ee3f016af6f4c4c197d7c8cf6b791568b38d41c1b9b9ca77e9e47&w=900",
+                    // url: "https://img.freepik.com/free-photo/front-view-young-female-green-t-shirt-showing-her-waist-pink-wall-waist-sport-exercise-workout-beauty-slim-athlete_140725-65212.jpg?t=st=1730723633~exp=1730727233~hmac=fbbbf060b77ee3f016af6f4c4c197d7c8cf6b791568b38d41c1b9b9ca77e9e47&w=900",
                     imgTitle: "Weight Loss",
+                    url: skin5,
                     points: [
                         {
                             icon: FaBolt, // Consider an icon related to weight loss or fitness
@@ -364,8 +391,9 @@ const ServicesDetails = () => {
             description: "Revitalize your hair with treatments designed to restore strength, shine, and vitality.",
             images: [
                 {
-                    url: "https://img.freepik.com/free-photo/woman-getting-hair-loss-treatment-clinic_23-2149152750.jpg?t=st=1729248444~exp=1729252044~hmac=6bfc4bd1b225cfeff3d11f5d43b003dbd56940ab9206c36d32bdb082c22447b6&w=900",
+                    // url: "https://img.freepik.com/free-photo/woman-getting-hair-loss-treatment-clinic_23-2149152750.jpg?t=st=1729248444~exp=1729252044~hmac=6bfc4bd1b225cfeff3d11f5d43b003dbd56940ab9206c36d32bdb082c22447b6&w=900",
                     imgTitle: "Hair Treatment",
+                    url: hair1,
                     // details: "Revitalize skin, reduce scars, and enhance youthful appearance effectively.",
                     points: [
                         {
@@ -384,8 +412,9 @@ const ServicesDetails = () => {
                 },
 
                 {
-                    url: "https://img.freepik.com/free-photo/young-woman-getting-prp-injection-high-angle_23-2149341429.jpg?t=st=1730182391~exp=1730185991~hmac=d64d06c732d848abef6e04fefcafc56de5a262c4f059137d1948a186e16747c9&w=900",
+                    // url: "https://img.freepik.com/free-photo/young-woman-getting-prp-injection-high-angle_23-2149341429.jpg?t=st=1730182391~exp=1730185991~hmac=d64d06c732d848abef6e04fefcafc56de5a262c4f059137d1948a186e16747c9&w=900",
                     imgTitle: " Hair PRP Treatment ",
+                    url: hair2,
                     // details: "After the procedure, you'll notice immediate improvements, with the full results visible over the coming weeks.",
                     points: [
                         {

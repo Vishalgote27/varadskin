@@ -3,6 +3,8 @@ import { FaLeaf, FaShoppingBag, FaUserShield } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import ImageAbout from '/photos/aboutowner.jpg'
 
+import whyskin from '/photos/whybookskin.avif'
+
 const WhyBook = () => {
     return <>
         {/* bg-[#FAF6F0] */}
@@ -55,7 +57,7 @@ const WhyBook = () => {
                     <div className="w-full md:w-1/2 mb-8 md:mb-0">
                         <div className="relative rounded-lg overflow-hidden shadow-lg">
                             <img
-                                src="https://img.freepik.com/free-photo/before-after-portrait-woman-retouched_23-2149121636.jpg?t=st=1728976322~exp=1728979922~hmac=0df2949a9827cb7ff22171e066f58f4facf1f2f1bd7631dfe83a4a2788310a50&w=900" // Add your image URL
+                                src={whyskin}// Add your image URL
                                 alt="Why Book With Me"
                                 className="w-full h-auto lg:h-96 object-cover"
                             />

@@ -4,17 +4,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
-    { id: 1, name: "Vivek patil", feedback: "Varad Skin Hair Laser Clinic is an excellent facility with easily accessible location. The doctors provide accurate diagnosis and great customer service. The clinic is clean, hygienic, and under good supervision." },
 
-    { id: 2, name: "Bhushan Patil", feedback: "TI had an excellent experience with Varad Skin Hair Laser Clinic. The clinic was easily accessible and well connected. The supervision was good, and the care provided was gentle. Overall, it was a great experience." },
 
-    { id: 3, name: "shaunak", feedback: "Varad Skin Hair Laser Clinic provides high standard care with great customer service. The doctors are well connected and ensure speedy recovery. The clinic is clean & hygienic, making it a top choice for treatment. " },
+    { id: 1, name: "Vivek Patil", feedback: "Varad Skin Hair Laser Clinic is an excellent facility with an easily accessible location. The doctors provide accurate diagnosis and great customer service. The clinic is clean, hygienic, and under good supervision." },
 
-    { id: 4, name: "Sajid Shaikh", feedback: "I recently visited Varad Skin Hair Laser Clinic and had an excellent experience. The professional counselling provided was extremely supportive. The clinic was clean and hygienic, which made me feel comfortable throughout my visit. I highly recommend this clinic for anyone seeking skin or hair treatments." },
+    { id: 2, name: "Bhushan Patil", feedback: "I had an excellent experience with Varad Skin Hair Laser Clinic. The clinic was easily accessible and well-connected. The supervision was good, and the care provided was gentle. Overall, it was a great experience." },
 
-    { id: 5, name: "Shubham Kamble", feedback: "I recently visited Varad Skin Hair Laser Clinic and was quite impressed with their decent coverage of services. The quick service and reasonably priced treatments were a pleasant surprise. I didn't have to wait long, which was great. Overall, an excellent experience!" },
+    { id: 3, name: "Shaunak", feedback: "Varad Skin Hair Laser Clinic provides high-standard care with great customer service. The doctors are well-connected and ensure speedy recovery. The clinic is clean & hygienic, making it a top choice for treatment." },
 
-    { id: 5, name: "ganesh patil", feedback: "Excellent clinic! Accurate diagnosis and reasonably priced treatments. The doctors are very professional and caring. Highly recommend Varad Skin Hair Laser Clinic for all your skin and hair needs." },
+    { id: 4, name: "Sajid Shaikh", feedback: "I recently visited Varad Skin Hair Laser Clinic and had an excellent experience. The professional counseling provided was extremely supportive. The clinic was clean and hygienic, which made me feel comfortable throughout my visit. I highly recommend this clinic for anyone seeking skin or hair treatments." },
+
+    { id: 5, name: "Shubham Kamble", feedback: "I recently visited Varad Skin Hair Laser Clinic and was quite impressed with their decent coverage of services. The quick service and reasonably priced treatments were a pleasant surprise. I didn't have to wait long, which was great. Overall, an excellent experience!" },
+
+    { id: 6, name: "Ganesh Patil", feedback: "Excellent clinic! Accurate diagnosis and reasonably priced treatments. The doctors are very professional and caring. Highly recommend Varad Skin Hair Laser Clinic for all your skin and hair needs." },
+
+
 ];
 
 const Testimonials = () => {

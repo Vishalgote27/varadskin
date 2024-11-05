@@ -24,7 +24,7 @@ const Hero = () => {
         </div> */}
 
 
-        <div className="relative w-full overflow-hidden mt-14">
+        <div className="relative w-full  overflow-hidden mt-14">
             <img
                 src="/photos/newvaradskincare.jpg"
                 alt="Banner Image"
@@ -33,11 +33,39 @@ const Hero = () => {
             w-full
             h-auto
             max-h-[100vh]
+           
             object-cover
-            mt-5  // top margin for spacing
+            mt-4  // top margin for spacing
         "
             />
         </div>
+
+
+
+
+        {/* <div className="relative w-full h-screen overflow-hidden mt-14 sm:mt-0">
+            <img
+                src="/photos/varadcare.png"
+                alt="Banner Image"
+                className="
+            w-full
+            h-full
+            object-cover
+            object-center
+            lg:object-cover
+            xl:h-screen xl:w-full xl:max-w-none 
+             
+            
+        "
+            />
+        </div> */}
+
+
+
+
+
+
+
 
 
 

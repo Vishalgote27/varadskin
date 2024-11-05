@@ -42,10 +42,10 @@ const Footer = () => {
                 <div>
                     <h4 className="font-bold text-lg mb-4">Pages</h4>
                     <ul className="text-gray-600">
-                        <li className="hover:text-[#C59847] mb-2"><a href="#">Home</a></li>
-                        <li className="hover:text-[#C59847] mb-2"><a href="#">About</a></li>
-                        <li className="hover:text-[#C59847] mb-2"><a href="#">Services</a></li>
-                        <li className="hover:text-[#C59847] mb-2"><a href="#">Contact Us</a></li>
+                        <li className="hover:text-[#C59847] mb-2"><Link to="/">Home</Link></li>
+                        <li className="hover:text-[#C59847] mb-2"><Link to="/about">About</Link></li>
+                        <li className="hover:text-[#C59847] mb-2"><Link to="/services">Services</Link></li>
+                        <li className="hover:text-[#C59847] mb-2"><Link to="/contact">Contact Us</Link></li>
                     </ul>
                 </div>
 
@@ -69,7 +69,7 @@ const Footer = () => {
                 {/* Contact Section */}
                 <div>
                     <h4 className="font-bold text-lg mb-4">Contact</h4>
-                    <p className="text-gray-600 mb-1 lg:text-sm">Address: Girja Housing Society, Ramkrushan Complex, Pundlik Nagar, Garkheda, Chh. Sambhajinagar</p>
+                    <p className="text-gray-600 mb-1 lg:text-sm">Address: Girja Housing Society, Ramkrushana Complex, Pundlik Nagar, Garkheda, Chh. Sambhajinagar</p>
                     <p className="text-gray-600 lg:text-sm">Email:<a href="mailto:support@skincare.com" className="text-[#C59847] hover:underline">varadskin2020@skincare.com</a></p>
                     <p className="text-gray-600 lg:text-sm">Phone: <a href="tel:+8767455374" className="text-[#C59847] hover:underline">8767455374</a></p>
                 </div>
@@ -105,9 +105,9 @@ const Footer = () => {
 
 
             <div className="container mx-auto flex items-center justify-center">
-                <div className="flex items-center sm:gap-5">
+                <div className="flex items-center sm:gap-5 mt-5">
                     <p>© 2024 - Varad Skin Care Clinic | Designed & Developed by</p>
-                    <img src="/photos/techsuryalogo.jpg" alt="Van Utsav Agro Tourism Logo" className="h-11 mr-2" />
+                    <img src="/photos/techsuryalogo.png" alt="Van Utsav Agro Tourism Logo" className="h-11 mr-2" />
                 </div>
             </div>
         </footer>
